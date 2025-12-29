@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[14pt,a4paper]{extarticle}
 
 % Paquetes necesarios
 \usepackage[utf8]{inputenc}
@@ -40,29 +40,30 @@
     stringstyle=\color{red}
 }
 
-% Información del documento
-\title{Trabajo Práctico Profesional\\
-\large{El fogon}}
-\author{Luis Waldman\\
-\small{Legajo: 79279}\\
-\small{Ingeniería en Informática}}
-\date{\today}
-
 \begin{document}
 
-% Portada
-\maketitle
-\thispagestyle{empty}
-
-\begin{center}
-\vspace{2cm}
-% \includegraphics[width=0.3\textwidth]{logo.png} % Descomentar cuando tengas el logo
-\vspace{2cm}
-
-\textbf{Universidad de Buenos Aires}\\
-\vspace{0.5cm}
-Año 2025
-\end{center}
+% Portada personalizada
+\begin{titlepage}
+    \begin{flushright}
+        \includegraphics[width=0.25\textwidth]{imagenes/logoFiuba.png}
+    \end{flushright}
+    
+    \vspace{2cm}
+    
+    \begin{center}
+        {\Huge\bfseries El Fogón}\\[0.5cm]
+        {\Large Sistema distribuido para músicos con estado compartido del compás, la canción y el repertorio}\\[3cm]
+        
+        {\large Segundo Cuatrimestre de 2025}\\[0.3cm]
+        {\large Tutor: Diego Montaldo}\\[2cm]
+        
+        {\large Luis Waldman}\\[0.2cm]
+        {\large Padrón: 79279}
+    \end{center}
+    
+    \vfill
+    
+\end{titlepage}
 
 \newpage
 
