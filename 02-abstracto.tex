@@ -1,0 +1,33 @@
+\section*{Abstracto}
+\addcontentsline{toc}{section}{Abstracto}
+
+\subsection*{Español}
+\addcontentsline{toc}{subsection}{Español}
+
+Fogón es un sistema distribuido orientado a facilitar la práctica musical y la sincronización entre músicos. A cada uno le ofrece, desde una aplicación web progresiva, vistas para su instrumento: letras, acordes o partituras. Permite crear listas y editar canciones. También, crear sesiones en la que los participantes comparten el estado de la canción, el repertorio y hasta el compás exacto que están tocando.
+
+El sistema ayuda al aprendizaje y la enseñanza musical al mostrar cómo realizar los acordes en cada instrumento y al permitir afinarlos.
+
+El principal desafío técnico fue el de la reproducción en dispositivos distribuidos: un *delay* de 20 ms empieza a ser perceptible por el oído humano y la latencia en internet es mayor. Se implementó un protocolo que sincroniza los dispositivos usando WebSocket y WebRTC (con compensación de *jitter*) a través de un servidor Golang.
+
+La arquitectura soporta numerosas vistas complejas y responsivas para distintos instrumentos, y permite agregar nuevas vistas para otros instrumentos. Para las partituras emplea la librería VexFlow, mientras que para las vistas de letra y acordes se usó un desarrollo propio.
+
+Para probar y *debuggear* el sistema de sincronización hubo que desarrollar algunas vistas y controles. Las pruebas de aceptación se desarrollaron de punta a punta con NUnit y Playwright.
+
+\textbf{Palabras Clave:} Música, Letras, Acordes, Partituras, Web, Sincronismo, Vue.js, WebSocket, WebRTC, Compensación de *jitter*, Diseño responsivo, Golang, NUnit, Playwright.
+
+\subsection*{English}
+\addcontentsline{toc}{subsection}{English}
+
+Fogón is a distributed system designed to facilitate musical practice and synchronization among musicians. It provides each musician with a progressive web application featuring instrument-specific views: lyrics, chords, or sheet music. It allows users to create playlists and edit songs. Additionally, it enables the creation of sessions where participants share the song state, repertoire, and even the exact bar they are playing.
+
+The system aids in musical learning and teaching by showing how to perform chords on each instrument and allowing for tuning.
+
+The main technical challenge was distributed device playback: a delay of 20 ms starts to become perceptible to the human ear, and internet latency is typically higher. A protocol was implemented that synchronizes devices using WebSocket and WebRTC (with jitter compensation) through a Golang server.
+
+The architecture supports numerous complex and responsive views for different instruments, and allows for the addition of new views for other instruments. For sheet music, it employs the VexFlow library, while for lyrics and chord views, a custom development was used.
+
+To test and debug the synchronization system, several views and controls had to be developed. End-to-end acceptance tests were developed with NUnit and Playwright.
+
+\textbf{Keywords:} Music, Lyrics, Chords, Sheet Music, Web, Synchronization, Vue.js, WebSocket, WebRTC, Jitter compensation, Responsive design, Golang, NUnit, Playwright.
+

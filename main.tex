@@ -70,124 +70,53 @@ Año 2025
 \tableofcontents
 \newpage
 
-% Resumen
-\section*{Resumen}
-\addcontentsline{toc}{section}{Resumen}
-Breve descripción del trabajo realizado, objetivos principales y conclusiones más importantes.
+% Palabras Clave
+\input{01-palabras-clave}
+\newpage
 
+% Abstracto
+\input{02-abstracto}
+\newpage
+
+% Agradecimientos
+\input{03-agradecimientos}
 \newpage
 
 % Introducción
-\section{Introducción}
-\label{sec:introduccion}
+\input{04-introduccion}
+\newpage
 
-En esta sección se presenta el contexto del trabajo, la problemática a resolver y los objetivos que se persiguen.
+% Estado del Arte
+\input{05-estado-del-arte}
+\newpage
 
-\subsection{Motivación}
-Describir qué motivó la realización de este trabajo.
+% Solución Implementada
+\input{06-solucion-implementada}
+\newpage
 
-\subsection{Objetivos}
-\subsubsection{Objetivo General}
-Describir el objetivo general del trabajo.
+% Metodología Aplicada
+\input{07-metodologia-aplicada}
+\newpage
 
-\subsubsection{Objetivos Específicos}
-\begin{itemize}
-    \item Objetivo específico 1
-    \item Objetivo específico 2
-    \item Objetivo específico 3
-\end{itemize}
+% Experimentación y Validación
+\input{08-experimentacion-validacion}
+\newpage
 
-% Marco Teórico
-\section{Marco Teórico}
-\label{sec:marco-teorico}
+% Cronogramas
+\input{09-cronogramas}
+\newpage
 
-Desarrollar los conceptos teóricos necesarios para comprender el trabajo.
+% Riesgos y Lecciones Aprendidas
+\input{10-riesgos-lecciones}
+\newpage
 
-\subsection{Conceptos Fundamentales}
-Explicar los conceptos básicos relacionados con el tema.
+% Impactos Sociales y Ambientales
+\input{11-impactos}
+\newpage
 
-\subsection{Estado del Arte}
-Describir trabajos previos relacionados y el estado actual del conocimiento en el área.
-
-% Metodología
-\section{Metodología}
-\label{sec:metodologia}
-
-Describir la metodología empleada para el desarrollo del trabajo.
-
-\subsection{Herramientas Utilizadas}
-\begin{itemize}
-    \item Herramienta 1
-    \item Herramienta 2
-    \item Herramienta 3
-\end{itemize}
-
-\subsection{Procedimiento}
-Detallar los pasos seguidos para llevar a cabo el trabajo.
-
-% Desarrollo
-\section{Desarrollo}
-\label{sec:desarrollo}
-
-Presentar el desarrollo del trabajo de manera detallada.
-
-\subsection{Implementación}
-Describir cómo se implementó la solución propuesta.
-
-% Ejemplo de inserción de código
-\begin{lstlisting}[language=Python, caption=Ejemplo de código]
-def funcion_ejemplo():
-    print("Hola, mundo!")
-    return True
-\end{lstlisting}
-
-% Ejemplo de figura
-\begin{figure}[h]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{imagen.png}
-    \caption{Descripción de la figura}
-    \label{fig:ejemplo}
-\end{figure}
-
-% Ejemplo de tabla
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \\
-        \hline
-        Dato 1 & Dato 2 & Dato 3 \\
-        \hline
-        Dato 4 & Dato 5 & Dato 6 \\
-        \hline
-    \end{tabular}
-    \caption{Descripción de la tabla}
-    \label{tab:ejemplo}
-\end{table}
-
-% Resultados
-\section{Resultados}
-\label{sec:resultados}
-
-Presentar los resultados obtenidos del trabajo realizado.
-
-\subsection{Análisis de Resultados}
-Analizar e interpretar los resultados obtenidos.
-
-% Ejemplo de ecuación
-\begin{equation}
-    E = mc^2
-    \label{eq:einstein}
-\end{equation}
-
-% Conclusiones
-\section{Conclusiones}
-\label{sec:conclusiones}
-
-Presentar las conclusiones del trabajo, resumiendo los principales hallazgos y logros alcanzados.
-
-\subsection{Trabajo Futuro}
-Describir posibles extensiones o mejoras que podrían realizarse en el futuro.
+% Desarrollos Futuros
+\input{12-desarrollos-futuros}
+\newpage
 
 % Referencias
 \begin{thebibliography}{99}
@@ -200,12 +129,5 @@ Autor, B. y Autor, C. (2023). Título del artículo. \textit{Nombre de la Revist
 \bibitem{referencia3}
 Autor, D. (2025). Documento en línea. Disponible en: \url{https://ejemplo.com}
 \end{thebibliography}
-
-% Apéndices (opcional)
-\appendix
-\section{Apéndice A: Material Adicional}
-\label{app:material-adicional}
-
-Incluir material adicional que complemente el trabajo pero que no es esencial para su comprensión.
 
 \end{document}
