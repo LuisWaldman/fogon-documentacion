@@ -1,21 +1,53 @@
 \section{Introducción}
 \label{sec:introduccion}
 
-En esta sección se presenta el contexto del trabajo, la problemática a resolver y los objetivos que se persiguen.
+Tanenbaum y Van Steen definen: "Un sistema distribuido es una colección de computadoras independientes que aparece ante sus usuarios como un sistema único y coherente" (1)
+
+La definicion coincide con la de un grupo musical que combina armonías, melodías y ritmos de modo que se escuche como un tema único y coherente.
+
+Para hacer esto los músicos se nutren de protocolos y mecanismos de coordinación que les permiten sincronizarse y compartir información.
+
+Los avances en la ciencia y la ingeniería fueron incorporados por los músicos: Pitágoras sintetizó la Matemática y la Armonía, la imprenta permitió la publicación de partituras, la revolución industrial el metrónomo de Maelzel.
+
+Desde que esta internet circulan archivos con paginas de acordes que evolucionaron a paginas multimedia, archivos MIDI, aplicaciones de edición de partituras, etc.
+
+La aplicación "El Fogón" pone a disposición de los músicos estos avances y propone un nuevo enfoque: cada músico puede acceder con su dispositivo a un Estado compartido de compás, canción, acordes, partituras, repertorio, etc.
+
+Esto permite que varios músicos toquen juntos y en sincronía, compartiendo y actualizando información en tiempo real , pero viendo cada uno la información de su instrumento
+
 
 \subsection{Motivación}
-Describir qué motivó la realización de este trabajo.
+Busca hacer un aporte novedoso a la musica desde la informatica, incorporando soluciones anteriores y  
+agregando un enfoque novedoso: el estado compartido entre músicos.
+
+Ademas, busca la alta disponibilidad: Los musicos pueden acceder a la aplicacion en su dispositivo en cualquier momento, 
+sin necesidad de conexion a la red.
 
 \subsection{Objetivos}
+
+Fogón es una solución dirigida tanto a cantantes y guitarristas aficionados como a músicos de orquestas profesionales: 
+una aplicación en donde puedan buscar letras de acordes y canciones de modo intuitivo y también una herramienta que los ayude a 
+ensayar y crear cosas nuevas. 
+
+
 \subsubsection{Objetivo General}
-Describir el objetivo general del trabajo.
 
-\subsubsection{Objetivos Específicos}
-\begin{itemize}
-    \item Objetivo específico 1
-    \item Objetivo específico 2
-    \item Objetivo específico 3
-\end{itemize}
+Cada músico podrá ver en su dispositivo la vista de su instrumento: el cantante, la letra; el guitarrista, los acordes; 
+el pianista sus partituras. Tendra Autoscroll y subrayado automático del compás actual, podra editar los tamaños de letra y acordes.
 
-\subsection{Alcance del Proyecto}
-Definir el alcance y los límites del proyecto.
+El publico podrá ver y editar una variedad de canciones publicadas en el mismo sitio. Si se loguea con su usuario,
+podrá compartir sus canciones con otros usuarios. 
+
+Varios usuarios podrán unirse en una sesión para sincronizar la lista de canciones, la canción que se está reproduciendo 
+y el  compas actual: de este modo podrán organizar un ensayo, un concierto o una noche de karaoke entre amigos.
+
+
+\subsubsection{Objetivos Tecnicos}
+La sincronización del compás en una sesión debe ser exacta cuando un grupo de músicos está tocando: un delay de 20 ms empieza a ser perceptible por el oído humano y la latencia en internet puede ser mayor. Los distintos dispositivos se conectarán con un servidor Golang e implementarán un protocolo que combine timestamps sincronizados (basados en NTP), buffers adaptativos y compensación del jitter (variación en la latencia) para resolver esto.
+El mismo servidor además por medio de HTTP intercambia los archivos de las canciones con las aplicaciones.
+Todas las visitas deberán poder adaptarse a distintos dispositivos, ser configurables y extensibles: será posible incorporar vistas adicionales, como notación numérica para armónica, tablaturas para guitarra, y reproductores multimedia como YouTube o Midi.
+Edicion de letra y acordes: También podrán editar las canciones mediante una interfaz intuitiva y accesible: la compleja relación entre las letras y los acordes, que además se agrupan en partes que se repiten según una secuencia podrá modificarse de una manera natural y sencilla.
+Sincronicacion: Varios usuarios logueados podrán unirse en una sesión para sincronizar la lista de canciones, la canción que
+ se está reproduciendo y el estado de la reproduccion.
+Construir algunas herramientas nesarias para la musica como un afinador que permita afinar distintos instrumentos.
+Construir herramientas para probar y "debuggear" el sistema de sincronización desarrollado.
