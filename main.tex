@@ -1,0 +1,211 @@
+\documentclass[12pt,a4paper]{article}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Configuración de la página
+\geometry{
+    left=3cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+% Configuración de encabezados y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{Trabajo Práctico Final}
+
+% Configuración de código fuente
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red}
+}
+
+% Información del documento
+\title{Trabajo Práctico Profesional\\
+\large{El fogon}}
+\author{Luis Waldman\\
+\small{Legajo: 79279}\\
+\small{Ingeniería en Informática}}
+\date{\today}
+
+\begin{document}
+
+% Portada
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+\vspace{2cm}
+% \includegraphics[width=0.3\textwidth]{logo.png} % Descomentar cuando tengas el logo
+\vspace{2cm}
+
+\textbf{Universidad de Buenos Aires}\\
+\vspace{0.5cm}
+Año 2025
+\end{center}
+
+\newpage
+
+% Índice
+\tableofcontents
+\newpage
+
+% Resumen
+\section*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+Breve descripción del trabajo realizado, objetivos principales y conclusiones más importantes.
+
+\newpage
+
+% Introducción
+\section{Introducción}
+\label{sec:introduccion}
+
+En esta sección se presenta el contexto del trabajo, la problemática a resolver y los objetivos que se persiguen.
+
+\subsection{Motivación}
+Describir qué motivó la realización de este trabajo.
+
+\subsection{Objetivos}
+\subsubsection{Objetivo General}
+Describir el objetivo general del trabajo.
+
+\subsubsection{Objetivos Específicos}
+\begin{itemize}
+    \item Objetivo específico 1
+    \item Objetivo específico 2
+    \item Objetivo específico 3
+\end{itemize}
+
+% Marco Teórico
+\section{Marco Teórico}
+\label{sec:marco-teorico}
+
+Desarrollar los conceptos teóricos necesarios para comprender el trabajo.
+
+\subsection{Conceptos Fundamentales}
+Explicar los conceptos básicos relacionados con el tema.
+
+\subsection{Estado del Arte}
+Describir trabajos previos relacionados y el estado actual del conocimiento en el área.
+
+% Metodología
+\section{Metodología}
+\label{sec:metodologia}
+
+Describir la metodología empleada para el desarrollo del trabajo.
+
+\subsection{Herramientas Utilizadas}
+\begin{itemize}
+    \item Herramienta 1
+    \item Herramienta 2
+    \item Herramienta 3
+\end{itemize}
+
+\subsection{Procedimiento}
+Detallar los pasos seguidos para llevar a cabo el trabajo.
+
+% Desarrollo
+\section{Desarrollo}
+\label{sec:desarrollo}
+
+Presentar el desarrollo del trabajo de manera detallada.
+
+\subsection{Implementación}
+Describir cómo se implementó la solución propuesta.
+
+% Ejemplo de inserción de código
+\begin{lstlisting}[language=Python, caption=Ejemplo de código]
+def funcion_ejemplo():
+    print("Hola, mundo!")
+    return True
+\end{lstlisting}
+
+% Ejemplo de figura
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{imagen.png}
+    \caption{Descripción de la figura}
+    \label{fig:ejemplo}
+\end{figure}
+
+% Ejemplo de tabla
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \\
+        \hline
+        Dato 1 & Dato 2 & Dato 3 \\
+        \hline
+        Dato 4 & Dato 5 & Dato 6 \\
+        \hline
+    \end{tabular}
+    \caption{Descripción de la tabla}
+    \label{tab:ejemplo}
+\end{table}
+
+% Resultados
+\section{Resultados}
+\label{sec:resultados}
+
+Presentar los resultados obtenidos del trabajo realizado.
+
+\subsection{Análisis de Resultados}
+Analizar e interpretar los resultados obtenidos.
+
+% Ejemplo de ecuación
+\begin{equation}
+    E = mc^2
+    \label{eq:einstein}
+\end{equation}
+
+% Conclusiones
+\section{Conclusiones}
+\label{sec:conclusiones}
+
+Presentar las conclusiones del trabajo, resumiendo los principales hallazgos y logros alcanzados.
+
+\subsection{Trabajo Futuro}
+Describir posibles extensiones o mejoras que podrían realizarse en el futuro.
+
+% Referencias
+\begin{thebibliography}{99}
+\bibitem{referencia1}
+Autor, A. (2024). \textit{Título del libro o artículo}. Editorial.
+
+\bibitem{referencia2}
+Autor, B. y Autor, C. (2023). Título del artículo. \textit{Nombre de la Revista}, 10(2), 123-145.
+
+\bibitem{referencia3}
+Autor, D. (2025). Documento en línea. Disponible en: \url{https://ejemplo.com}
+\end{thebibliography}
+
+% Apéndices (opcional)
+\appendix
+\section{Apéndice A: Material Adicional}
+\label{app:material-adicional}
+
+Incluir material adicional que complemente el trabajo pero que no es esencial para su comprensión.
+
+\end{document}
