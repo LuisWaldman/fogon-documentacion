@@ -3,25 +3,26 @@
 
 Tanenbaum y Van Steen definen: "Un sistema distribuido es una colección de computadoras independientes que aparece ante sus usuarios como un sistema único y coherente" (1)
 
-La definicion coincide con la de un grupo musical que combina armonías, melodías y ritmos de modo que se escuche como un tema único y coherente.
+La definición coincide con la de un grupo musical que combina armonías, melodías y ritmos de modo que se escuche como un tema único y coherente.
 
 Para hacer esto los músicos se nutren de protocolos y mecanismos de coordinación que les permiten sincronizarse y compartir información.
 
-Los avances en la ciencia y la ingeniería fueron incorporados por los músicos: Pitágoras sintetizó la Matemática y la Armonía, la imprenta permitió la publicación de partituras, la revolución industrial el metrónomo de Maelzel.
 
-Desde que esta internet circulan archivos con paginas de acordes que evolucionaron a paginas multimedia, archivos MIDI, aplicaciones de edición de partituras, etc.
+Los avances en la ciencia y la ingeniería fueron incorporados por los músicos: Pitágoras sintetizó la matemática y la armonía; la imprenta permitió la publicación de partituras; la revolución industrial introdujo el metrónomo de Maelzel.
+
+Desde que existe Internet, circulan archivos con páginas de acordes que evolucionaron a páginas multimedia, archivos MIDI, aplicaciones de edición de partituras, etc.
 
 La aplicación "El Fogón" pone a disposición de los músicos estos avances y propone un nuevo enfoque: cada músico puede acceder con su dispositivo a un Estado compartido de compás, canción, acordes, partituras, repertorio, etc.
 
-Esto permite que varios músicos toquen juntos y en sincronía, compartiendo y actualizando información en tiempo real , pero viendo cada uno la información de su instrumento
+Esto permite que varios músicos toquen juntos y en sincronía, compartiendo y actualizando información en tiempo real, pero cada uno ve la información de su instrumento.
 
 
 \subsection{Motivación}
-Busca hacer un aporte novedoso a la musica desde la informatica, incorporando soluciones anteriores y  
+Busca hacer un aporte novedoso a la música desde la informática, incorporando soluciones anteriores y
 agregando un enfoque novedoso: el estado compartido entre músicos.
 
-Ademas, busca la alta disponibilidad: Los musicos pueden acceder a la aplicacion en su dispositivo en cualquier momento, 
-sin necesidad de conexion a la red.
+Además, busca la alta disponibilidad: los músicos pueden acceder a la aplicación en su dispositivo en cualquier momento,
+sin necesidad de conexión a la red.
 
 \subsection{Objetivos}
 
@@ -32,22 +33,28 @@ ensayar y crear cosas nuevas.
 
 \subsubsection{Objetivo General}
 
-Cada músico podrá ver en su dispositivo la vista de su instrumento: el cantante, la letra; el guitarrista, los acordes; 
-el pianista sus partituras. Tendra Autoscroll y subrayado automático del compás actual, podra editar los tamaños de letra y acordes.
+Cada músico podrá ver en su dispositivo la vista de su instrumento: el cantante, la letra; el guitarrista, los acordes;
+el pianista, sus partituras. Tendrá autoscroll y subrayado automático del compás actual; podrá editar los tamaños de letra y acordes.
 
-El publico podrá ver y editar una variedad de canciones publicadas en el mismo sitio. Si se loguea con su usuario,
-podrá compartir sus canciones con otros usuarios. 
+El público podrá ver y editar una variedad de canciones publicadas en el mismo sitio. Si se loguea con su usuario,
+podrá compartir sus canciones con otros usuarios.
 
-Varios usuarios podrán unirse en una sesión para sincronizar la lista de canciones, la canción que se está reproduciendo 
-y el  compas actual: de este modo podrán organizar un ensayo, un concierto o una noche de karaoke entre amigos.
+Varios usuarios podrán unirse en una sesión para sincronizar la lista de canciones, la canción que se está reproduciendo
+y el compás actual: de este modo podrán organizar un ensayo, un concierto o una noche de karaoke entre amigos.
 
 
-\subsubsection{Objetivos Tecnicos}
-La sincronización del compás en una sesión debe ser exacta cuando un grupo de músicos está tocando: un delay de 20 ms empieza a ser perceptible por el oído humano y la latencia en internet puede ser mayor. Los distintos dispositivos se conectarán con un servidor Golang e implementarán un protocolo que combine timestamps sincronizados (basados en NTP), buffers adaptativos y compensación del jitter (variación en la latencia) para resolver esto.
-El mismo servidor además por medio de HTTP intercambia los archivos de las canciones con las aplicaciones.
-Todas las visitas deberán poder adaptarse a distintos dispositivos, ser configurables y extensibles: será posible incorporar vistas adicionales, como notación numérica para armónica, tablaturas para guitarra, y reproductores multimedia como YouTube o Midi.
-Edicion de letra y acordes: También podrán editar las canciones mediante una interfaz intuitiva y accesible: la compleja relación entre las letras y los acordes, que además se agrupan en partes que se repiten según una secuencia podrá modificarse de una manera natural y sencilla.
-Sincronicacion: Varios usuarios logueados podrán unirse en una sesión para sincronizar la lista de canciones, la canción que
- se está reproduciendo y el estado de la reproduccion.
-Construir algunas herramientas nesarias para la musica como un afinador que permita afinar distintos instrumentos.
+\subsubsection{Objetivos Técnicos}
+
+La sincronización del compás en una sesión debe ser exacta cuando un grupo de músicos está tocando: un delay de 20 ms empieza a ser perceptible por el oído humano y la latencia en Internet puede ser mayor. Los distintos dispositivos se conectarán con un servidor Golang e implementarán un protocolo que combine timestamps sincronizados (basados en NTP), buffers adaptativos y compensación del jitter (variación en la latencia) para resolver esto.
+
+El mismo servidor, además, por medio de HTTP intercambia los archivos de las canciones con las aplicaciones.
+
+Todas las vistas deberán poder adaptarse a distintos dispositivos, ser configurables y extensibles: será posible incorporar vistas adicionales, como notación numérica para armónica, tablaturas para guitarra y reproductores multimedia como YouTube o MIDI.
+
+Edición de letra y acordes: también podrán editar las canciones mediante una interfaz intuitiva y accesible; la compleja relación entre las letras y los acordes, que además se agrupan en partes que se repiten según una secuencia, podrá modificarse de una manera natural y sencilla.
+
+Sincronización: varios usuarios logueados podrán unirse en una sesión para sincronizar la lista de canciones, la canción que se está reproduciendo y el estado de la reproducción.
+
+Construir algunas herramientas necesarias para la música, como un afinador que permita afinar distintos instrumentos.
+
 Construir herramientas para probar y "debuggear" el sistema de sincronización desarrollado.

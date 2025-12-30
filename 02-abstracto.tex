@@ -8,9 +8,9 @@ Fogón es un sistema distribuido orientado a facilitar la práctica musical y la
 
 El sistema ayuda al aprendizaje y la enseñanza musical al mostrar cómo realizar los acordes en cada instrumento y al permitir afinarlos.
 
-El principal desafío técnico fue el de la reproducción en dispositivos distribuidos: un *delay* de 20 ms empieza a ser perceptible por el oído humano y la latencia en internet es mayor. Se implementó un protocolo que sincroniza los dispositivos usando WebSocket y WebRTC (con compensación de *jitter*) a través de un servidor Golang.
-
 La arquitectura soporta numerosas vistas complejas y responsivas para distintos instrumentos, y permite agregar nuevas vistas para otros instrumentos. Para las partituras emplea la librería VexFlow, mientras que para las vistas de letra y acordes se usó un desarrollo propio.
+
+El principal desafío técnico fue el de la reproducción en dispositivos distribuidos: un "delay" de 20 ms empieza a ser perceptible por el oído humano y la latencia en internet es mayor. Se implementó un protocolo que sincroniza los dispositivos usando WebSocket y WebRTC (con compensación de jitter) a través de un servidor Golang.
 
 Para probar y "debuggear" el sistema de sincronización hubo que desarrollar algunas vistas y controles. Las pruebas de aceptación se desarrollaron de punta a punta con NUnit y Playwright.
 
@@ -23,9 +23,9 @@ Fogón is a distributed system designed to facilitate musical practice and synch
 
 The system aids in musical learning and teaching by showing how to perform chords on each instrument and allowing for tuning.
 
-The main technical challenge was distributed device playback: a delay of 20 ms starts to become perceptible to the human ear, and internet latency is typically higher. A protocol was implemented that synchronizes devices using WebSocket and WebRTC (with jitter compensation) through a Golang server.
-
 The architecture supports numerous complex and responsive views for different instruments, and allows for the addition of new views for other instruments. For sheet music, it employs the VexFlow library, while for lyrics and chord views, a custom development was used.
+
+The main technical challenge was distributed device playback: a delay of 20 ms starts to become perceptible to the human ear, and internet latency is typically higher. A protocol was implemented that synchronizes devices using WebSocket and WebRTC (with jitter compensation) through a Golang server.
 
 To test and debug the synchronization system, several views and controls had to be developed. End-to-end acceptance tests were developed with NUnit and Playwright.
 
