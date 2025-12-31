@@ -15,7 +15,7 @@ Resulta interesante ver el acorde en la tercera posicion de la escala
 agregadando la nota Re#, extranjera de la escala, nos provoca el deseo de que resuelva 
 en la nota mas cercana de la escala: La nota es el Mi y el acorde Mi menor.
 pongamos a tocar el fogon.ar y veamos como usa el acorde SI7 "antinatural"
-Desde la tonica, el lugar de comodidad, enseguida suena este SI7, genera incomodidad y 
+Desde la tonica, el lugar relajado y comodo, enseguida suena este SI7, genera incomodidad y 
 resuelve enseguida en el mi menor; 
 luego eleva la tension con una semitonica para prepararnos para un subibaja:
 Tonica - Dominante, Tonica - Dominante, ahi vamos
