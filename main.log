@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  30 DEC 2025 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  5 JAN 2026 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,7 +523,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count308
-<imagenes/logoFiuba.png, id=239, 184.2885pt x 74.679pt>
+<imagenes/logoFiuba.png, id=103, 184.2885pt x 74.679pt>
 File: imagenes/logoFiuba.png Graphic file (type png)
 <use imagenes/logoFiuba.png>
 Package pdftex.def Info: imagenes/logoFiuba.png  used on input line 48.
@@ -531,19 +531,11 @@ Package pdftex.def Info: imagenes/logoFiuba.png  used on input line 48.
 [1
 
 {C:/Users/luisw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./imagenes/l
-ogoFiuba.png>] (main.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ogoFiuba.png>] (main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
 
-(C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
-(C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -556,12 +548,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 ...seño de Experimentos}{15}{subsection.5.1}
-                                                  % [1])
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-
+l.72 \newpage
+              [1] (01-palabras-clave.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -569,7 +557,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[2] (01-palabras-clave.tex)
+[2] (02-abstracto.tex
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -577,7 +565,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[3] (02-abstracto.tex
+[3])
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -585,7 +573,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[4])
+[4] (03-agradecimientos.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -593,7 +581,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[5] (03-agradecimientos.tex)
+[5] (04-introduccion.tex
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -601,7 +589,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[6] (04-introduccion.tex
+[6])
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -609,7 +597,19 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[7])
+[7] (05-estado-del-arte.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+
+
+(C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+
+
+(C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -617,7 +617,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[8] (05-estado-del-arte.tex
+[8]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -633,7 +633,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[10]
+[10])
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -641,7 +641,14 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[11])
+[11] (06-solucion-implementada.tex
+<imagenes/tocarMaquinaSerFeliz.png, id=168, 341.47575pt x 378.213pt>
+File: imagenes/tocarMaquinaSerFeliz.png Graphic file (type png)
+<use imagenes/tocarMaquinaSerFeliz.png>
+Package pdftex.def Info: imagenes/tocarMaquinaSerFeliz.png  used on input line 
+19.
+(pdftex.def)             Requested size: 352.81552pt x 390.77565pt.
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -649,12 +656,20 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[12] (06-solucion-implementada.tex
+[12 <./imagenes/tocarMaquinaSerFeliz.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 17.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{17.0pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
+
+[13]
 (C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 24.
+nput line 95.
 )
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -663,7 +678,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[13] (07-metodologia-aplicada.tex)
+[14] (07-metodologia-aplicada.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -671,7 +686,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[14] (08-experimentacion-validacion.tex)
+[15] (08-experimentacion-validacion.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -679,7 +694,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[15] (09-cronogramas.tex)
+[16] (09-cronogramas.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -687,7 +702,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[16] (10-riesgos-lecciones.tex)
+[17] (10-riesgos-lecciones.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -695,7 +710,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[17] (11-impactos.tex
+[18] (11-impactos.tex
 Overfull \hbox (11.82239pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/20.74 Impactos So-cia-les y Am-bien-ta-les del Pro-
  []
@@ -708,7 +723,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[18] (12-desarrollos-futuros.tex)
+[19] (12-desarrollos-futuros.tex)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -716,7 +731,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[19]
+[20]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 17.0pt, for example:
@@ -724,7 +739,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-3.0pt}.
 
-[20] (main.aux
+[21] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -732,17 +747,27 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3BEBA5BF8397DC24949CD3E27992289B;9471.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: F14559AE7567F08ED9A01EA08845A05E;3714
+(rerunfilecheck)             After:  F13BB1A7E98F9F8D3E2D3EADC9BB6B9C;10084.
  ) 
 Here is how much of TeX's memory you used:
- 15821 strings out of 474486
- 251878 string characters out of 5743754
- 1945542 words of memory out of 5000000
- 37790 multiletter control sequences out of 15000+600000
+ 15810 strings out of 474486
+ 251983 string characters out of 5743754
+ 1946542 words of memory out of 5000000
+ 37768 multiletter control sequences out of 15000+600000
  567830 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,512b,1351s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,512b,1351s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx8.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/pu
@@ -758,9 +783,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
 cm/cmr8.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmti12.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (21 pages, 266830 bytes).
+Output written on main.pdf (22 pages, 334688 bytes).
 PDF statistics:
- 499 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 478 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
