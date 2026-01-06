@@ -1,4 +1,4 @@
-\documentclass[14pt,a4paper]{extarticle}
+\documentclass[11pt,a4paper]{article}
 
 % Paquetes necesarios
 \usepackage[utf8]{inputenc}
@@ -13,20 +13,43 @@
 \usepackage{caption}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{mathptmx} % Times New Roman
+\usepackage{titlesec}
 
 % Configuración de la página
 \geometry{
+    a4paper,
     left=3cm,
     right=2.5cm,
     top=2.5cm,
-    bottom=2.5cm
+    bottom=2.5cm,
+    headheight=14pt
 }
+
+% Configuración del interlineado
+\setstretch{1.5}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% Configuración de tamaños de títulos
+\titleformat{\section}
+  {\normalfont\fontsize{16}{19.2}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{16.8}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{11}{13.2}\bfseries}{\thesubsubsection}{1em}{}
+
+% Eliminar espaciado antes y después de títulos
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}
 
 % Configuración de encabezados y pie de página
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\thepage}
-\lhead{El Fogon - www.fogon.ar}
+\chead{El Fogón - Sistema distribuido para músicos}
+\rfoot{\thepage}
+\lfoot{Waldman}
 
 % Configuración de código fuente
 \lstset{
