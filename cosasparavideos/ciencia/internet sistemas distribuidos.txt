@@ -1,4 +1,4 @@
-Esta es una coleccion de videos para que aprendas 
-de musica, de poesia, de ciencia y demas cosas
-que te van a mantener alejado de ser un famoso o millonario
-Hoy presentamos: 
+Esta es una coleccion de videos sobre musica y poesia, 
+pensado desde la ciencia y la informatica. Son una serie de estudios 
+que te van a mantener alejado de ser un famoso o un millonario.
+Hoy presentamos: Internet y sistemas distribuidos
