@@ -6,7 +6,6 @@ Intro: "para tocar la cancion de Sui Generis 'Mariel y el capitan',
 "Tiene un ritmo xxxxx y un compas de x/x y Vemos en "partes" 
 que tiene una sola parte de 8 compases que se repite toda la cancion"
 "Elegimos la opcion de escala para hacer el analisis armonico:
-
 Un concepto que acompaño a Charly Garcia es el de que la tercera nota de un acorde le 
  da el caracter: Claro, es la que las hace mayores o menores, 
  alegres o tristes.
