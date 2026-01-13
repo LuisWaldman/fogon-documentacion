@@ -7,7 +7,7 @@ La vista de escenarios (la "+1" del modelo de Kruchten) ilustra cómo las otras 
 
 \textbf{Contexto:} Un músico quiere buscar y tocar una canción desde su dispositivo.
 
-\begin{lstlisting}[language=Gherkin, caption=Escenario: Búsqueda y reproducción de canción]
+\begin{lstlisting}[caption=Escenario: Búsqueda y reproducción de canción]
 Feature: Tocar canciones
   Como musico
   Quiero buscar y tocar canciones
@@ -36,7 +36,7 @@ Scenario: Buscar y reproducir una cancion
 
 \textbf{Contexto:} Un grupo de músicos quiere ensayar tocando cada uno desde su dispositivo pero sincronizados.
 
-\begin{lstlisting}[language=Gherkin, caption=Escenario: Sesión colaborativa sincronizada]
+\begin{lstlisting}[caption=Escenario: Sesión colaborativa sincronizada]
 Feature: Sesiones sincronizadas
   Como musico lider de una banda
   Quiero crear una sesion compartida
@@ -75,7 +75,7 @@ Scenario: Crear y unirse a una sesion
 
 \textbf{Contexto:} Un usuario quiere corregir los acordes de una canción y compartirla con la comunidad.
 
-\begin{lstlisting}[language=Gherkin, caption=Escenario: Edición colaborativa]
+\begin{lstlisting}[caption=Escenario: Edición colaborativa]
 Feature: Edicion de canciones
   Como musico
   Quiero editar canciones y compartirlas
@@ -111,7 +111,7 @@ Scenario: Editar y publicar una cancion
 
 \textbf{Contexto:} Un músico quiere practicar en un lugar sin internet.
 
-\begin{lstlisting}[language=Gherkin, caption=Escenario: Operación offline]
+\begin{lstlisting}[caption=Escenario: Operación offline]
 Feature: Modo offline
   Como musico
   Quiero usar la aplicacion sin internet
@@ -119,7 +119,7 @@ Feature: Modo offline
 
 Scenario: Tocar canciones previamente cargadas sin conexion
   Given que previamente cargue 10 canciones con conexion
-  And marqué las canciones como "favoritas"
+  And marque las canciones como "favoritas"
   When pierdo la conexion a internet
   And abro la aplicacion
   Then la aplicacion carga normalmente (PWA)

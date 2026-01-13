@@ -1,0 +1,98 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Palabras Clave}{2}{Doc-Start}%
+\contentsline {section}{Abstracto}{3}{Doc-Start}%
+\contentsline {subsection}{Español}{3}{section*.1}%
+\contentsline {subsection}{English}{3}{section*.1}%
+\contentsline {section}{Agradecimientos}{5}{section*.1}%
+\contentsline {section}{\numberline {1}Introducción}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivación}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Objetivos}{6}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Objetivo General}{6}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Objetivos Técnicos}{7}{subsubsection.1.2.2}%
+\contentsline {section}{\numberline {2}Estado del Arte}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Sobre el sonido y la música}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Herramientas}{8}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Pentagramas}{8}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Cancioneros}{9}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Afinadores}{9}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Metrónomos}{9}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Aplicaciones Web Musicales}{9}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Cancioneros}{9}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Reproductores online de video y acordes}{10}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Editores de partituras online}{10}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}Reproductores online de audio y video}{10}{subsubsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.4}El futuro llego, hace rato...}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Conclusión}{10}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Solución Implementada}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}WWW.FOGON.AR}{12}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}tocar}{13}{subsubsection.3.1.1}%
+\contentsline {paragraph}{icono-fogon}{13}{subsubsection.3.1.1}%
+\contentsline {paragraph}{menu}{13}{subsubsection.3.1.1}%
+\contentsline {paragraph}{vistas}{13}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Sincronizar}{13}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Buscar y Listar}{14}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Editar}{14}{subsubsection.3.1.4}%
+\contentsline {paragraph}{Hola}{14}{subsubsection.3.1.4}%
+\contentsline {paragraph}{Acerca de...}{14}{subsubsection.3.1.4}%
+\contentsline {paragraph}{Afinar}{14}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Configurar}{14}{subsubsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.2}Arquitectura del Sistema}{15}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Vista Lógica}{15}{subsubsection.3.2.1}%
+\contentsline {paragraph}{Componentes Principales}{15}{subsubsection.3.2.1}%
+\contentsline {paragraph}{Relaciones entre Componentes}{16}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Vista de procesos}{16}{subsubsection.3.2.2}%
+\contentsline {paragraph}{Procesos Principales}{16}{subsubsection.3.2.2}%
+\contentsline {paragraph}{Protocolo de Sincronización}{16}{subsubsection.3.2.2}%
+\contentsline {paragraph}{Comunicación entre Procesos}{17}{Item.4}%
+\contentsline {paragraph}{Gestión de Concurrencia}{17}{Item.4}%
+\contentsline {subsubsection}{\numberline {3.2.3}Vista Física}{18}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Arquitectura de Despliegue}{18}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Topología de Red}{18}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Distribución de Responsabilidades}{19}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Requisitos de Hardware y Red}{19}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Escalabilidad}{19}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Vista de Desarrollo}{20}{subsubsection.3.2.4}%
+\contentsline {paragraph}{Organización del Código}{20}{subsubsection.3.2.4}%
+\contentsline {paragraph}{Stack Tecnológico}{21}{subsubsection.3.2.4}%
+\contentsline {paragraph}{Gestión de Dependencias}{22}{subsubsection.3.2.4}%
+\contentsline {paragraph}{Estrategia de Build}{22}{subsubsection.3.2.4}%
+\contentsline {paragraph}{Patrones de Diseño Utilizados}{22}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Vista de Escenarios}{22}{subsubsection.3.2.5}%
+\contentsline {paragraph}{Escenario 1: Tocar una canción en solitario}{22}{subsubsection.3.2.5}%
+\contentsline {paragraph}{Escenario 2: Crear sesión sincronizada}{23}{lstnumber.1.14}%
+\contentsline {paragraph}{Escenario 3: Editar y compartir canción}{24}{lstnumber.2.24}%
+\contentsline {paragraph}{Escenario 4: Uso offline}{25}{lstnumber.3.21}%
+\contentsline {paragraph}{Cobertura de Pruebas}{26}{lstnumber.4.22}%
+\contentsline {subsection}{\numberline {3.3}Tecnologías Utilizadas}{26}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Metodología Aplicada}{27}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Marco Metodológico}{27}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Proceso de Desarrollo}{27}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Herramientas de Desarrollo}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Gestión del Proyecto}{27}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Experimentación y Validación}{28}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Diseño de Experimentos}{28}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Casos de Prueba}{28}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Resultados Obtenidos}{28}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Análisis de Resultados}{28}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Validación con Usuarios}{28}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Cronogramas}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Cronograma Planificado}{29}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Cronograma Real}{29}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Desviaciones y Ajustes}{29}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Riesgos y Lecciones Aprendidas}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Identificación de Riesgos}{30}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Gestión de Riesgos}{30}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Problemas Encontrados}{30}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Lecciones Aprendidas}{30}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Impactos Sociales y Ambientales del Proyecto}{31}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Impacto Social}{31}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Impacto Ambiental}{31}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Responsabilidad Social y Ética}{31}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Medidas de Mitigación}{31}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Desarrollos Futuros}{32}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Mejoras Propuestas}{32}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Funcionalidades Adicionales}{32}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Escalabilidad}{32}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Investigación Futura}{32}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Conclusiones Finales}{32}{subsection.9.5}%
+\contentsline {section}{Referencias}{33}{subsection.9.5}%
