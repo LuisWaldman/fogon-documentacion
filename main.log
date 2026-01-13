@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  10 JAN 2026 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  13 JAN 2026 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -567,7 +567,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count308
-<imagenes/logoFiuba.png, id=259, 184.2885pt x 74.679pt>
+<imagenes/logoFiuba.png, id=275, 184.2885pt x 74.679pt>
 File: imagenes/logoFiuba.png Graphic file (type png)
 <use imagenes/logoFiuba.png>
 Package pdftex.def Info: imagenes/logoFiuba.png  used on input line 71.
@@ -613,7 +613,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...cnologías Utilizadas}{16}{subsection.3.3}
+l.40 ....1}Vista Lógica}{16}{subsubsection.3.2.1}
                                                   % [1] [2])
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -633,24 +633,32 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
  [11] [12]) [13] (06-solucion-implementada.tex
-<imagenes/tocarMaquinaSerFeliz.png, id=396, 341.47575pt x 378.213pt>
+<imagenes/tocarMaquinaSerFeliz.png, id=415, 341.47575pt x 378.213pt>
 File: imagenes/tocarMaquinaSerFeliz.png Graphic file (type png)
 <use imagenes/tocarMaquinaSerFeliz.png>
 Package pdftex.def Info: imagenes/tocarMaquinaSerFeliz.png  used on input line 
 20.
 (pdftex.def)             Requested size: 352.81552pt x 390.77565pt.
 
-[14 <./imagenes/tocarMaquinaSerFeliz.png>] (06-01-tocar.tex)
-(06-02-vista-logica.tex [15]) (06-03-vista-procesos.tex)
-(06-04-vista-fisica.tex) (06-05-vista-desarrollo.tex)
+[14 <./imagenes/tocarMaquinaSerFeliz.png>] (06-01-01-tocar.tex)
+(06-01-02-sincronizar.tex) (06-01-03-buscar-listar.tex [15])
+(06-01-04-editar.tex) (06-01-05-configurar.tex) (06-02-vista-logica.tex
+[16]) (06-03-vista-procesos.tex) (06-04-vista-fisica.tex)
+(06-05-vista-desarrollo.tex)
 (C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 58.
-) [16] (07-metodologia-aplicada.tex) [17] (08-experimentacion-validacion.tex)
-[18] (09-cronogramas.tex) [19] (10-riesgos-lecciones.tex) [20] (11-impactos.tex
-) [21] (12-desarrollos-futuros.tex) [22] [23] (main.aux
+nput line 62.
+) [17] (07-metodologia-aplicada.tex) [18] (08-experimentacion-validacion.tex)
+[19] (09-cronogramas.tex) [20] (10-riesgos-lecciones.tex) [21] (11-impactos.tex
+) [22] (12-desarrollos-futuros.tex) [23]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[]\OT1/ptm/m/n/10.95 "Moises AI Stu-dio: Ly-ric Wri-ter,"Moises AI Stu-dio. [On
+-li-ne]. Avai-la-ble:
+ []
+
+[24] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -660,19 +668,22 @@ L3 programming layer <2024-01-04>
  ***********
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 98C95E640AB10DAF95C4865DE548A3FE;10184
-(rerunfilecheck)             After:  BFE435E1DDF387F096601EFA46998F63;10231.
+(rerunfilecheck)             Before: B6C41C1F64EF1DA93DA605251028F1B6;10621
+(rerunfilecheck)             After:  0B9488BDB0229332FA465AE14D38467A;10739.
  ) 
 Here is how much of TeX's memory you used:
- 16304 strings out of 474486
- 257759 string characters out of 5743754
+ 16349 strings out of 474486
+ 259074 string characters out of 5743754
  1948542 words of memory out of 5000000
- 38229 multiletter control sequences out of 15000+600000
+ 38256 multiletter control sequences out of 15000+600000
  601491 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,512b,1347s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -684,9 +695,9 @@ blic/amsfonts/cm/cmtt10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts
 type1/urw/times/utmb8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmr8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (24 pages, 286228 bytes).
+Output written on main.pdf (25 pages, 291500 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 103 named destinations out of 1000 (max. 500000)
- 531 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 563 words of extra memory for PDF output out of 10000 (max. 10000000)
 

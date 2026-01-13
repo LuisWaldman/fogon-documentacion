@@ -29,46 +29,46 @@
 \contentsline {paragraph}{icono-fogon}{15}{subsubsection.3.1.1}%
 \contentsline {paragraph}{menu}{15}{subsubsection.3.1.1}%
 \contentsline {paragraph}{vistas}{15}{subsubsection.3.1.1}%
-\contentsline {paragraph}{Configuración}{15}{subsubsection.3.1.1}%
-\contentsline {paragraph}{buscar}{15}{subsubsection.3.1.1}%
-\contentsline {paragraph}{editar}{15}{subsubsection.3.1.1}%
-\contentsline {paragraph}{compartir}{15}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}Arquitectura del Sistema}{15}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Vista Lógica}{15}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Vista de procesos}{16}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Vista Física}{16}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Vista desarrollo}{16}{subsubsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.3}Tecnologías Utilizadas}{16}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Implementación}{16}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Metodología Aplicada}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Marco Metodológico}{17}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Proceso de Desarrollo}{17}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Herramientas de Desarrollo}{17}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Gestión del Proyecto}{17}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Experimentación y Validación}{18}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Diseño de Experimentos}{18}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Casos de Prueba}{18}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Resultados Obtenidos}{18}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Análisis de Resultados}{18}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Validación con Usuarios}{18}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Cronogramas}{19}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Cronograma Planificado}{19}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Cronograma Real}{19}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Desviaciones y Ajustes}{19}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Riesgos y Lecciones Aprendidas}{20}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Identificación de Riesgos}{20}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Gestión de Riesgos}{20}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Problemas Encontrados}{20}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Lecciones Aprendidas}{20}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Impactos Sociales y Ambientales del Proyecto}{21}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Impacto Social}{21}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Impacto Ambiental}{21}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Responsabilidad Social y Ética}{21}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Medidas de Mitigación}{21}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Desarrollos Futuros}{22}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Mejoras Propuestas}{22}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Funcionalidades Adicionales}{22}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Escalabilidad}{22}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Investigación Futura}{22}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Conclusiones Finales}{22}{subsection.9.5}%
-\contentsline {section}{Referencias}{23}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {3.1.2}Sincronizar}{15}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Buscar y Listar}{16}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Configurar}{16}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.5}Configurar}{16}{subsubsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.2}Arquitectura del Sistema}{16}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Vista Lógica}{16}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Vista de procesos}{17}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Vista Física}{17}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Vista desarrollo}{17}{subsubsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.3}Tecnologías Utilizadas}{17}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Implementación}{17}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Metodología Aplicada}{18}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Marco Metodológico}{18}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Proceso de Desarrollo}{18}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Herramientas de Desarrollo}{18}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Gestión del Proyecto}{18}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Experimentación y Validación}{19}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Diseño de Experimentos}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Casos de Prueba}{19}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Resultados Obtenidos}{19}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Análisis de Resultados}{19}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Validación con Usuarios}{19}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Cronogramas}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Cronograma Planificado}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Cronograma Real}{20}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Desviaciones y Ajustes}{20}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Riesgos y Lecciones Aprendidas}{21}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Identificación de Riesgos}{21}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Gestión de Riesgos}{21}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Problemas Encontrados}{21}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Lecciones Aprendidas}{21}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Impactos Sociales y Ambientales del Proyecto}{22}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Impacto Social}{22}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Impacto Ambiental}{22}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Responsabilidad Social y Ética}{22}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Medidas de Mitigación}{22}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Desarrollos Futuros}{23}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Mejoras Propuestas}{23}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Funcionalidades Adicionales}{23}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Escalabilidad}{23}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Investigación Futura}{23}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Conclusiones Finales}{23}{subsection.9.5}%
+\contentsline {section}{Referencias}{24}{subsection.9.5}%
