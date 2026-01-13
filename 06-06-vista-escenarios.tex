@@ -1,0 +1,156 @@
+\subsubsection{Vista de Escenarios}
+\label{sec:vista-escenarios}
+
+La vista de escenarios (la "+1" del modelo de Kruchten) ilustra cómo las otras cuatro vistas trabajan juntas a través de casos de uso concretos. Documentamos los escenarios principales usando el formato de pruebas de aceptación de Reqnroll (Gherkin).
+
+\paragraph{Escenario 1: Tocar una canción en solitario}
+
+\textbf{Contexto:} Un músico quiere buscar y tocar una canción desde su dispositivo.
+
+\begin{lstlisting}[language=Gherkin, caption=Escenario: Búsqueda y reproducción de canción]
+Feature: Tocar canciones
+  Como musico
+  Quiero buscar y tocar canciones
+  Para practicar con mi instrumento
+
+Scenario: Buscar y reproducir una cancion
+  Given que soy un usuario no autenticado
+  When ingreso "la maquina de ser feliz" en el buscador
+  Then veo una lista de resultados con esa cancion
+  When selecciono "La maquina de ser feliz - Charly Garcia"
+  Then veo la vista de mi instrumento (acordes para guitarra)
+  When presiono el boton de reproducir
+  Then comienza el autoscroll sincronizado con el metronomo
+  And el compas actual se resalta automaticamente
+\end{lstlisting}
+
+\textbf{Vistas involucradas:}
+\begin{itemize}
+    \item \textbf{Lógica:} Gestor de Canciones, Motor de Renderizado, Motor de Reproducción
+    \item \textbf{Procesos:} Proceso de renderizado UI, scheduling de eventos del metrónomo
+    \item \textbf{Física:} Ejecución local en el cliente, sin comunicación con servidor
+    \item \textbf{Desarrollo:} Componentes Vue (SearchView, PlayerView), Services (SongService, PlaybackService)
+\end{itemize}
+
+\paragraph{Escenario 2: Crear sesión sincronizada}
+
+\textbf{Contexto:} Un grupo de músicos quiere ensayar tocando cada uno desde su dispositivo pero sincronizados.
+
+\begin{lstlisting}[language=Gherkin, caption=Escenario: Sesión colaborativa sincronizada]
+Feature: Sesiones sincronizadas
+  Como musico lider de una banda
+  Quiero crear una sesion compartida
+  Para que todos toquemos sincronizados
+
+Scenario: Crear y unirse a una sesion
+  Given que soy un usuario autenticado "Luis (Guitarra)"
+  When creo una nueva sesion "Ensayo Banda"
+  Then obtengo un codigo de sesion "ABC123"
+  
+  Given que otro usuario "Ana (Voz)" ingresa el codigo "ABC123"
+  When Ana se une a la sesion
+  Then veo que Ana esta conectada en mi sesion
+  And Ana ve el mismo estado de la sesion que yo
+  
+  When selecciono la cancion "Flaca - Andres Calamaro"
+  Then Ana ve automaticamente la misma cancion
+  And Ana ve la vista de su instrumento (letra)
+  And yo veo la vista de mi instrumento (acordes)
+  
+  When inicio la reproduccion
+  Then todos los dispositivos comienzan sincronizados
+  And el compas se actualiza simultaneamente en todos
+  And la diferencia de tiempo es menor a 20ms
+\end{lstlisting}
+
+\textbf{Vistas involucradas:}
+\begin{itemize}
+    \item \textbf{Lógica:} Gestor de Sesiones, Motor de Sincronización, Gestor de Usuarios
+    \item \textbf{Procesos:} Protocolo de sincronización de relojes, WebSocket bidireccional, compensación de jitter
+    \item \textbf{Física:} Clientes múltiples, servidor central coordinando, topología estrella
+    \item \textbf{Desarrollo:} SessionService, SyncService, WebSocket handlers en Go
+\end{itemize}
+
+\paragraph{Escenario 3: Editar y compartir canción}
+
+\textbf{Contexto:} Un usuario quiere corregir los acordes de una canción y compartirla con la comunidad.
+
+\begin{lstlisting}[language=Gherkin, caption=Escenario: Edición colaborativa]
+Feature: Edicion de canciones
+  Como musico
+  Quiero editar canciones y compartirlas
+  Para contribuir a la comunidad
+
+Scenario: Editar y publicar una cancion
+  Given que estoy tocando "Como dos extranos - Los Fabulosos"
+  When presiono el boton "Editar"
+  Then ingreso al modo de edicion
+  When cambio el acorde del compas 5 de "Am" a "Am7"
+  And agrego una nueva parte "Puente" con su letra y acordes
+  And modifico la secuencia para incluir el puente
+  Then veo una vista previa de mis cambios
+  
+  When guardo la cancion
+  Then la cancion se guarda localmente
+  And tengo la opcion de "Publicar al servidor"
+  
+  When publico la cancion
+  Then otros usuarios pueden encontrarla en sus busquedas
+  And la cancion aparece en mi perfil como contribucion
+\end{lstlisting}
+
+\textbf{Vistas involucradas:}
+\begin{itemize}
+    \item \textbf{Lógica:} Gestor de Canciones (editor), Gestor de Persistencia, Gestor de Usuarios
+    \item \textbf{Procesos:} Validación de formato, serialización/deserialización, API REST
+    \item \textbf{Física:} Guardado local primero (IndexedDB), luego sincronización con servidor
+    \item \textbf{Desarrollo:} EditorView component, SongEditor service, API endpoints en Go
+\end{itemize}
+
+\paragraph{Escenario 4: Uso offline}
+
+\textbf{Contexto:} Un músico quiere practicar en un lugar sin internet.
+
+\begin{lstlisting}[language=Gherkin, caption=Escenario: Operación offline]
+Feature: Modo offline
+  Como musico
+  Quiero usar la aplicacion sin internet
+  Para practicar en cualquier lugar
+
+Scenario: Tocar canciones previamente cargadas sin conexion
+  Given que previamente cargue 10 canciones con conexion
+  And marqué las canciones como "favoritas"
+  When pierdo la conexion a internet
+  And abro la aplicacion
+  Then la aplicacion carga normalmente (PWA)
+  And puedo acceder a mis canciones favoritas
+  And puedo tocar con autoscroll y metronomo
+  But no puedo crear sesiones sincronizadas
+  And no puedo buscar canciones nuevas
+  
+  When edito una cancion en modo offline
+  Then los cambios se guardan localmente
+  And veo una indicacion "Pendiente de sincronizar"
+  
+  When recupero la conexion a internet
+  Then mis cambios se sincronizan automaticamente con el servidor
+\end{lstlisting}
+
+\textbf{Vistas involucradas:}
+\begin{itemize}
+    \item \textbf{Lógica:} Gestor de Persistencia (prioridad local), Service Worker
+    \item \textbf{Procesos:} Cache-first strategy, background sync cuando se recupera conexión
+    \item \textbf{Física:} Ejecución 100\% local en el cliente
+    \item \textbf{Desarrollo:} Service Worker (Workbox), IndexedDB para persistencia, sync queues
+\end{itemize}
+
+\paragraph{Cobertura de Pruebas}
+
+Estos escenarios se implementan como pruebas de aceptación automatizadas usando:
+\begin{itemize}
+    \item \textbf{Framework:} Reqnroll (.NET/C\#) para BDD
+    \item \textbf{Automatización:} Playwright para control del navegador
+    \item \textbf{Ejecución:} CI/CD pipeline ejecuta estos tests en cada merge a main
+\end{itemize}
+
+Los escenarios validan la integración completa de las cuatro vistas arquitectónicas y garantizan que el sistema cumple con los requisitos funcionales desde la perspectiva del usuario final.

@@ -1,8 +1,114 @@
-\subsubsection{Vista desarrollo}
-cómo se organiza el software para los desarrolladores (módulos, paquetes, capas).
+\subsubsection{Vista de Desarrollo}
+\label{sec:vista-desarrollo}
+
+La vista de desarrollo describe la organización del software desde la perspectiva del programador, incluyendo la estructura de módulos, gestión de código fuente y estrategia de build.
+
+\paragraph{Organización del Código}
+
+El proyecto se organiza en dos repositorios principales:
+
+\textbf{Repositorio Cliente (fogon-web):}
+\begin{itemize}
+    \item \texttt{/src/components/} - Componentes Vue.js reutilizables
+    \begin{itemize}
+        \item \texttt{/views/} - Vistas de instrumentos (LetraView, AcordesView, PartituraView)
+        \item \texttt{/controls/} - Controles de reproducción y configuración
+        \item \texttt{/tools/} - Herramientas (Afinador, Metrónomo)
+    \end{itemize}
+    \item \texttt{/src/services/} - Lógica de negocio e integración
+    \begin{itemize}
+        \item \texttt{song-service.ts} - Gestión de canciones
+        \item \texttt{sync-service.ts} - Protocolo de sincronización
+        \item \texttt{session-service.ts} - Gestión de sesiones
+        \item \texttt{api-client.ts} - Cliente HTTP para el backend
+    \end{itemize}
+    \item \texttt{/src/stores/} - Estado global (Pinia/Vuex)
+    \item \texttt{/src/workers/} - Web Workers para procesamiento
+    \item \texttt{/src/models/} - Tipos y modelos de datos (TypeScript)
+    \item \texttt{/src/utils/} - Utilidades compartidas
+    \item \texttt{/public/} - Assets estáticos
+\end{itemize}
+
+\textbf{Repositorio Servidor (fogon-server):}
+\begin{itemize}
+    \item \texttt{/cmd/server/} - Punto de entrada de la aplicación
+    \item \texttt{/internal/handlers/} - Handlers HTTP y WebSocket
+    \item \texttt{/internal/services/} - Lógica de negocio
+    \item \texttt{/internal/models/} - Estructuras de datos
+    \item \texttt{/internal/repository/} - Capa de persistencia
+    \item \texttt{/internal/sync/} - Protocolo de sincronización
+    \item \texttt{/pkg/} - Paquetes reutilizables
+\end{itemize}
+
+\paragraph{Stack Tecnológico}
+
+\textbf{Frontend:}
+\begin{itemize}
+    \item \textbf{Framework:} Vue.js 3 - Composition API para componentes reactivos
+    \item \textbf{Lenguaje:} TypeScript - Tipado estático para mayor robustez
+    \item \textbf{Build Tool:} Vite - Build rápido y HMR
+    \item \textbf{Estado:} Pinia - State management
+    \item \textbf{Routing:} Vue Router - Navegación SPA
+    \item \textbf{Notación Musical:} VexFlow - Renderizado de partituras
+    \item \textbf{PWA:} Workbox - Service Worker y cache
+    \item \textbf{Estilos:} CSS3 + SCSS - Diseño responsivo
+\end{itemize}
+
+\textbf{Backend:}
+\begin{itemize}
+    \item \textbf{Lenguaje:} Go 1.21+ - Concurrencia nativa con goroutines
+    \item \textbf{WebSocket:} gorilla/websocket - Comunicación bidireccional
+    \item \textbf{HTTP Router:} chi o gorilla/mux
+    \item \textbf{Base de Datos:} PostgreSQL para datos estructurados, Redis para cache/sessions
+    \item \textbf{ORM:} GORM o sqlx
+\end{itemize}
+
+\textbf{Testing:}
+\begin{itemize}
+    \item \textbf{Unit Tests Frontend:} Vitest + Vue Test Utils
+    \item \textbf{Unit Tests Backend:} Go testing package + testify
+    \item \textbf{E2E Tests:} Playwright + .NET (C\#) + Reqnroll (BDD)
+    \item \textbf{API Tests:} Postman/Newman
+\end{itemize}
+
+\textbf{DevOps:}
+\begin{itemize}
+    \item \textbf{Control de Versiones:} Git + GitHub
+    \item \textbf{CI/CD:} GitHub Actions
+    \item \textbf{Containerización:} Docker + Docker Compose
+    \item \textbf{Deployment:} (TBD - cloud provider)
+\end{itemize}
+
+\paragraph{Gestión de Dependencias}
 
 \begin{itemize}
-    \item Componente 1
-    \item Componente 2
-    \item Componente 3
+    \item \textbf{Frontend:} npm/pnpm con \texttt{package.json} y lockfile
+    \item \textbf{Backend:} Go modules (\texttt{go.mod}, \texttt{go.sum})
 \end{itemize}
+
+\paragraph{Estrategia de Build}
+
+\begin{itemize}
+    \item \textbf{Desarrollo:} Vite dev server con HMR para frontend, \texttt{go run} con hot-reload para backend
+    \item \textbf{Testing:} Pipeline de CI ejecuta tests unitarios y E2E en cada PR
+    \item \textbf{Producción:} Build optimizado con minificación, tree-shaking, y code-splitting. Docker multi-stage build para deployments eficientes.
+\end{itemize}
+
+\paragraph{Patrones de Diseño Utilizados}
+
+\begin{itemize}
+    \item \textbf{Observer:} Para reactivity en Vue.js y eventos de sincronización
+    \item \textbf{Factory:} Para creación de componentes de vista según instrumento
+    \item \textbf{Strategy:} Para diferentes motores de renderizado (letra, acordes, partitura)
+    \item \textbf{Repository:} Para abstracción de persistencia en el backend
+    \item \textbf{Singleton:} Para servicios globales (conexión WebSocket, configuración)
+\end{itemize}
+
+% TODO: Agregar diagrama de paquetes UML
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\textwidth]{imagenes/diagrama-paquetes.png}
+%     \caption{Diagrama de paquetes y dependencias}
+%     \label{fig:paquetes}
+% \end{figure}
+

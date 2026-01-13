@@ -1,4 +1,93 @@
 \subsubsection{Vista Física}
+\label{sec:vista-fisica}
+
+La vista física describe cómo los componentes de software se mapean en la infraestructura de hardware y la topología de red del sistema.
+
+\paragraph{Arquitectura de Despliegue}
+
+El sistema El Fogón utiliza una arquitectura cliente-servidor con capacidad de operación offline:
+
+\begin{itemize}
+    \item \textbf{Nodos Cliente:} Dispositivos heterogéneos (smartphones, tablets, laptops, desktops) que ejecutan la PWA en navegadores web modernos.
+    
+    \item \textbf{Servidor Central:} Servidor Golang que hospeda:
+    \begin{itemize}
+        \item Servidor HTTP/HTTPS para servir la aplicación web
+        \item Servidor WebSocket para sincronización en tiempo real
+        \item API REST para operaciones CRUD
+        \item Base de datos de canciones y usuarios
+    \end{itemize}
+    
+    \item \textbf{CDN (Opcional):} Para distribución de assets estáticos (imágenes, CSS, JS).
+\end{itemize}
+
+\paragraph{Topología de Red}
+
+\textbf{Topología Estrella:} Todos los clientes se conectan al servidor central. El servidor actúa como hub de comunicación para las sesiones sincronizadas.
+
+\textbf{Ventajas:}
+\begin{itemize}
+    \item Simplicidad en la gestión de estado compartido
+    \item El servidor es la única fuente de verdad
+    \item Facilita la resolución de conflictos
+\end{itemize}
+
+\textbf{Desventajas:}
+\begin{itemize}
+    \item Punto único de falla
+    \item Latencia agregada (cliente A → servidor → cliente B)
+\end{itemize}
+
+\textbf{Mitigación con WebRTC:} En desarrollo - topología híbrida donde los clientes pueden conectarse peer-to-peer para reducir latencia en LANs, manteniendo el servidor como fallback.
+
+\paragraph{Distribución de Responsabilidades}
+
+\begin{itemize}
+    \item \textbf{En el Cliente:}
+    \begin{itemize}
+        \item Renderizado de vistas (Vue.js + VexFlow)
+        \item Lógica de presentación y UI
+        \item Cache local de canciones (IndexedDB)
+        \item Service Worker para operación offline
+        \item Compensación de jitter y scheduling preciso de eventos
+    \end{itemize}
+    
+    \item \textbf{En el Servidor:}
+    \begin{itemize}
+        \item Autoridad sobre el estado compartido
+        \item Persistencia de canciones y usuarios (base de datos)
+        \item Broadcast de eventos de sincronización
+        \item Autenticación y autorización
+        \item Mediación de timestamps para sincronización
+    \end{itemize}
+\end{itemize}
+
+\paragraph{Requisitos de Hardware y Red}
+
+\begin{itemize}
+    \item \textbf{Cliente:} Navegador moderno (Chrome 90+, Firefox 88+, Safari 14+), 2GB RAM mínimo, conexión a internet opcional.
+    
+    \item \textbf{Servidor:} CPU de 2+ cores, 4GB RAM, 20GB almacenamiento, conexión de banda ancha (10 Mbps mínimo).
+    
+    \item \textbf{Red:} Para sincronización en tiempo real, se recomienda latencia < 100ms y conexión estable. El sistema adapta el buffer según latencia detectada.
+\end{itemize}
+
+\paragraph{Escalabilidad}
+
+El servidor Golang puede escalar horizontalmente con:
+\begin{itemize}
+    \item Balanceador de carga para HTTP/HTTPS
+    \item Sticky sessions para WebSocket
+    \item Redis para compartir estado entre instancias del servidor
+\end{itemize}
+
+% TODO: Agregar diagrama de despliegue UML
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\textwidth]{imagenes/diagrama-despliegue.png}
+%     \caption{Diagrama de despliegue del sistema El Fogón}
+%     \label{fig:despliegue}
+% \end{figure}
 cómo se despliega en hardware (nodos, servidores, redes).
 \begin{itemize}
     \item Componente 1

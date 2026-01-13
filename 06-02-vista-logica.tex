@@ -1,7 +1,48 @@
 \subsubsection{Vista Lógica}
-qué funcionalidades ofrece el sistema
+\label{sec:vista-logica}
+
+La vista lógica describe la funcionalidad que el sistema ofrece a sus usuarios finales, organizando el sistema en componentes lógicos según sus responsabilidades.
+
+\paragraph{Componentes Principales}
+
+El sistema El Fogón se organiza en los siguientes componentes lógicos principales:
+
 \begin{itemize}
-    \item Componente 1
-    \item Componente 2
-    \item Componente 3
+    \item \textbf{Gestor de Canciones:} Administra el repositorio de canciones, incluyendo búsqueda, listado, creación y edición. Gestiona la estructura de letra, acordes, partituras y secuencias de partes.
+    
+    \item \textbf{Motor de Renderizado:} Responsable de generar las vistas específicas para cada instrumento (letra, acordes, partituras). Implementa el autoscroll y el resaltado del compás actual. Utiliza VexFlow para la notación musical y un motor propio para letra y acordes.
+    
+    \item \textbf{Motor de Sincronización:} Coordina el estado compartido entre múltiples dispositivos en una sesión. Gestiona el compás actual, la canción activa y el repertorio. Implementa compensación de latencia y jitter.
+    
+    \item \textbf{Gestor de Sesiones:} Administra las sesiones colaborativas, permitiendo que múltiples usuarios se unan y compartan estado. Controla roles y permisos de los participantes.
+    
+    \item \textbf{Motor de Reproducción:} Controla la reproducción de canciones con metrónomo, videos sincronizados (YouTube) y MIDI generado desde partituras.
+    
+    \item \textbf{Herramientas Musicales:} Provee funcionalidades auxiliares como afinador, transposición automática de tonalidad y visualización de diagramas de acordes para diferentes instrumentos.
+    
+    \item \textbf{Gestor de Configuración:} Administra las preferencias del usuario: instrumento, tamaño de fuentes, columnas, modo de reproducción, y configuración de sesiones.
+    
+    \item \textbf{Gestor de Persistencia:} Maneja el almacenamiento local (IndexedDB/LocalStorage) y la sincronización con el servidor remoto. Permite operación offline.
+    
+    \item \textbf{Gestor de Usuarios:} Administra autenticación, perfiles de usuario y compartición de canciones entre usuarios.
 \end{itemize}
+
+\paragraph{Relaciones entre Componentes}
+
+\begin{itemize}
+    \item El \textbf{Motor de Renderizado} consulta al \textbf{Gestor de Canciones} para obtener el contenido y al \textbf{Gestor de Configuración} para las preferencias de visualización.
+    
+    \item El \textbf{Motor de Sincronización} notifica al \textbf{Motor de Reproducción} sobre cambios en el compás y éste actualiza el \textbf{Motor de Renderizado}.
+    
+    \item El \textbf{Gestor de Sesiones} coordina con el \textbf{Motor de Sincronización} para mantener el estado compartido entre dispositivos.
+    
+    \item El \textbf{Gestor de Persistencia} provee datos tanto al \textbf{Gestor de Canciones} como al \textbf{Gestor de Usuarios}.
+\end{itemize}
+
+% TODO: Agregar diagrama de componentes UML mostrando las relaciones entre los componentes lógicos
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=\textwidth]{imagenes/diagrama-componentes-logicos.png}
+%     \caption{Diagrama de componentes lógicos del sistema El Fogón}
+%     \label{fig:componentes-logicos}
+% \end{figure}

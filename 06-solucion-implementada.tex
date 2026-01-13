@@ -41,7 +41,14 @@ cambios automáticos de escala.
 \input{06-01-05-configurar}
 
 \subsection{Arquitectura del Sistema}
-Descripción de la arquitectura general del sistema.
+
+Para describir la arquitectura del sistema, utilizamos el modelo de vistas 4+1 de Kruchten \cite{kruchten1995}. 
+
+En la vista lógica detallaremos componentes principales del cliente y las clases que permiten comunicarse con el servidor. 
+Luego, en la vista de procesos, veremos el protocolo para sincronización y mantener el estado compartido entre sesiones.
+En la vista física veremos el mapeo físico en la red en la que ocurren dichos procesos.
+El 4 del 4+1 es la vista de desarrollo, donde describimos la organizacion del codigo.
+Y el +1: la vista de escenarios, que seran descriptos en formato Reqnroll. \cite{reqnroll2024}. 
 
 \input{06-02-vista-logica}
 
@@ -51,24 +58,8 @@ Descripción de la arquitectura general del sistema.
 
 \input{06-05-vista-desarrollo}
 
+\input{06-06-vista-escenarios}
+
 
 \subsection{Tecnologías Utilizadas}
 Listar y justificar las tecnologías seleccionadas.
-
-\subsection{Implementación}
-Describir cómo se implementó la solución propuesta.
-
-% Ejemplo de inserción de código
-\begin{lstlisting}[language=Python, caption=Ejemplo de código]
-def funcion_ejemplo():
-    print("Hola, mundo!")
-    return True
-\end{lstlisting}
-
-% Ejemplo de figura
-\begin{figure}[h]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{imagen.png}
-    \caption{Descripción de la figura}
-    \label{fig:ejemplo}
-\end{figure}
