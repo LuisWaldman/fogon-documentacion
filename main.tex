@@ -16,6 +16,7 @@
 \usepackage{mathptmx} % Times New Roman
 \usepackage{titlesec}
 \usepackage{tikz}
+\usetikzlibrary{positioning}
 \usepackage{float}
 
 % Configuración de la página
@@ -93,7 +94,11 @@
 \newpage
 
 % Índice
+\begingroup
+\small
+\setstretch{1.0}
 \tableofcontents
+\endgroup
 \newpage
 
 % Palabras Clave
@@ -153,13 +158,13 @@
 A. S. Tanenbaum and M. Van Steen, \textit{Distributed Systems: Principles and Paradigms}, 3rd ed. Boston, MA: Pearson, 2017.
 
 \bibitem{kruchten1995}
-P. Kruchten, "The 4+1 view model of architecture," \textit{IEEE Software}, vol. 12, no. 6, pp. 42-50, Nov. 1995.
+P. Kruchten, ``The 4+1 view model of architecture,'' \textit{IEEE Software}, vol. 12, no. 6, pp. 42-50, Nov. 1995.
 
 \bibitem{reqnroll2024}
-"Reqnroll: Open-source Cucumber-style BDD test automation framework for .NET," Reqnroll. [Online]. Available: https://reqnroll.net/. [Accessed: Jan. 7, 2026].
+``Reqnroll: Open-source Cucumber-style BDD test automation framework for .NET,'' Reqnroll. [Online]. Available: https://reqnroll.net/. [Accessed: Jan. 7, 2026].
 
 \bibitem{aplicacionmoises}
-"Moises AI Studio: Lyric Writer," Moises AI Studio. [Online]. Available: https://studio.moises.ai/lyric-writer/. [Accessed: Jan. 7, 2026].
+``Moises AI Studio: Lyric Writer,'' Moises AI Studio. [Online]. Available: https://studio.moises.ai/lyric-writer/. [Accessed: Jan. 7, 2026].
 \end{thebibliography}
 
 \end{document}

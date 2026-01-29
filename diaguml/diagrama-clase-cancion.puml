@@ -1,0 +1,60 @@
+@startuml diagrama-clase-cancion
+!define RECTANGLE class
+
+class Cancion {
+    + archivo: string
+    + cancion: string
+    + banda: string
+    + acordes: Acordes
+    + letras: Letra
+    + bpm?: number
+    + calidad?: number
+    + compasCantidad: number
+    + compasUnidad: number
+    + escala: string
+    + etiquetas: string[]
+    + medias: Media[]
+    + pentagramas: Pentagrama[]
+    + totalCompases: number
+    + duracionCancion: number
+}
+
+class Acordes {
+    + partes: Parte[]
+    + ordenPartes: number[]
+    + GetTotalAcordes(): number
+    + GetTodosLosAcordes(): string[]
+    + GetDistintosAcordes(): string[]
+}
+
+class Parte {
+    + nombre: string
+    + acordes: string[]
+}
+
+class Letra {
+    + renglones: string[][]
+    + RenglonDelCompas(n): number
+    + GetTodosLosRenglones(): string[]
+}
+
+class Media {
+    + tipo: string
+    + id: string
+    + delay: number
+}
+
+class Pentagrama {
+    + compases: PentagramaCompas[]
+    + instrumento: string
+    + nombre: string
+    + clave: string
+}
+
+Cancion ||--|| Acordes
+Acordes ||--o{ Parte
+Cancion ||--|| Letra
+Cancion ||--o{ Media
+Cancion ||--o{ Pentagrama
+
+@enduml
