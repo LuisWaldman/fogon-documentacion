@@ -36,42 +36,43 @@
 \contentsline {subsection}{\numberline {3.2}Arquitectura del Sistema}{20}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Vista Lógica}{20}{subsubsection.3.2.1}%
 \contentsline {paragraph}{Canción}{20}{subsubsection.3.2.1}%
-\contentsline {paragraph}{Aplicación}{21}{subsubsection.3.2.1}%
+\contentsline {paragraph}{Aplicación}{21}{figure.caption.13}%
+\contentsline {paragraph}{Reproductor}{21}{figure.caption.14}%
 \contentsline {subsubsection}{\numberline {3.2.2}Vista de procesos}{21}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Vista Física}{21}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Vista de Desarrollo}{21}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Vista de Escenarios}{21}{subsubsection.3.2.5}%
-\contentsline {paragraph}{Escenario 1: Tocar una canción en solitario}{21}{subsubsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.3}Tecnologías Utilizadas}{21}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Metodología Aplicada}{22}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Marco Metodológico}{22}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Proceso de Desarrollo}{22}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Herramientas de Desarrollo}{22}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Gestión del Proyecto}{22}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Experimentación y Validación}{23}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Diseño de Experimentos}{23}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Casos de Prueba}{23}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Resultados Obtenidos}{23}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Análisis de Resultados}{23}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Validación con Usuarios}{23}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Cronogramas}{24}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Cronograma Planificado}{24}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Cronograma Real}{24}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Desviaciones y Ajustes}{24}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Riesgos y Lecciones Aprendidas}{25}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Identificación de Riesgos}{25}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Gestión de Riesgos}{25}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Problemas Encontrados}{25}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Lecciones Aprendidas}{25}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Impactos Sociales y Ambientales del Proyecto}{26}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Impacto Social}{26}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Impacto Ambiental}{26}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Responsabilidad Social y Ética}{26}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Medidas de Mitigación}{26}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Desarrollos Futuros}{27}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Mejoras Propuestas}{27}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Funcionalidades Adicionales}{27}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Escalabilidad}{27}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Investigación Futura}{27}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Conclusiones Finales}{27}{subsection.9.5}%
-\contentsline {section}{Referencias}{28}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {3.2.3}Vista Física}{22}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Vista de Desarrollo}{22}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Vista de Escenarios}{22}{subsubsection.3.2.5}%
+\contentsline {paragraph}{Escenario 1: Tocar una canción en solitario}{22}{subsubsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.3}Tecnologías Utilizadas}{22}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Metodología Aplicada}{23}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Marco Metodológico}{23}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Proceso de Desarrollo}{23}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Herramientas de Desarrollo}{23}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Gestión del Proyecto}{23}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Experimentación y Validación}{24}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Diseño de Experimentos}{24}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Casos de Prueba}{24}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Resultados Obtenidos}{24}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Análisis de Resultados}{24}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Validación con Usuarios}{24}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Cronogramas}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Cronograma Planificado}{25}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Cronograma Real}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Desviaciones y Ajustes}{25}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Riesgos y Lecciones Aprendidas}{26}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Identificación de Riesgos}{26}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Gestión de Riesgos}{26}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Problemas Encontrados}{26}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Lecciones Aprendidas}{26}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Impactos Sociales y Ambientales del Proyecto}{27}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Impacto Social}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Impacto Ambiental}{27}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Responsabilidad Social y Ética}{27}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Medidas de Mitigación}{27}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Desarrollos Futuros}{28}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Mejoras Propuestas}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Funcionalidades Adicionales}{28}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Escalabilidad}{28}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Investigación Futura}{28}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Conclusiones Finales}{28}{subsection.9.5}%
+\contentsline {section}{Referencias}{29}{subsection.9.5}%
