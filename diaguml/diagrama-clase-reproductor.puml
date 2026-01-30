@@ -1,0 +1,49 @@
+@startuml diagrama-clase-reproductor
+
+class Reproductor {
+  - MediaVista: MediaVista | null
+  - strategyReproductor: StrategyReproductor
+  - listaReproduccion: ListaReproduccion
+  - estadoReproductor: string
+  - cancion: Cancion
+  - compas: number
+  
+  + sincronizar(): void
+  + updateCompas(compas: number): void
+  + iniciarReproduccion(): void
+}
+
+class StrategyReproductor {
+  # EstadoSincro: EstadoSincroCancion
+  # reproductor: Reproductor
+  # sesSincroCancion: SincroSesion
+  
+  + iniciarReproduccion(): void
+  + SetEstado(estado: EstadoReproduccion): void
+  + detenerReproduccion(): void
+  + updateCompas(compas: number): void
+  + sincronizar(): Promise<void>
+  + CargarCancion(cancion: ItemIndiceCancion): Promise<void>
+}
+
+class StrategyReproductorConectado {
+  # cliente: ClienteSocket
+  # token: string
+  
+  + SetEstado(estado: string): void
+  + EnviarCancion(cancion: Cancion): Promise<void>
+  + GetCancionDelFogon(): Promise<void>
+  + CargarCancion(cancion: ItemIndiceCancion): Promise<void>
+  + sincronizar(): Promise<void>
+  + iniciarReproduccion(): Promise<void>
+  + detenerReproduccion(): void
+  + updateCompas(compas: number): void
+}
+
+Reproductor --> MediaVista
+Reproductor --> StrategyReproductor
+Reproductor --> ListaReproduccion
+Reproductor --> Cancion
+StrategyReproductorConectado --|> StrategyReproductor
+
+@enduml

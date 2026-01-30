@@ -1,5 +1,13 @@
 \subsubsection{Vista de procesos}\label{sec:vista-procesos}
 
-Aqui repasaremos el ciclo de reproduccion de una cancion en modo desconectado y luego como se 
-logra la sincronizacion en modo conectado.
+Aqui repasaremos, con diagramas de secuencia, como la clase reproductor utiliza
+un Strategy para manejar la reproduccion en modo desconectado y en modo conectado. 
+
+Ejemplificamos con el proceso IniciarReproduccion, pero debe suponerse 
+uno similar para DetenerReproduccion,CambiarCompas, CambiarLaListaDeCanciones, etc.
+
+Luego, mostraremos la secuencia con la que logra sincronizar relojes con el servidor y
+entre clientes usando WebRTC.
+
+\paragraph{IniciarReproduccion}
 

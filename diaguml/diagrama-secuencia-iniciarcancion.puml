@@ -1,0 +1,24 @@
+@startuml diagrama-secuencia-iniciarcancionunica
+
+actor Vista as "Usuario"
+participant Reproductor
+participant Strategy as "StrategyReproductor"
+participant Media as "MediaVista"
+
+Vista -> Reproductor: iniciarReproduccion()
+activate Reproductor
+activate Media
+
+Reproductor -> Strategy: iniciarReproduccion()
+activate Strategy
+
+Strategy -> Strategy: SeteaMomentoInicio()
+Strategy -> Media: Iniciar()
+
+Strategy --> Reproductor: 
+deactivate Strategy
+
+Reproductor --> Vista: 
+deactivate Reproductor
+
+@enduml
