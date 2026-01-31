@@ -1,0 +1,27 @@
+@startuml
+actor Usuario1
+participant Servidor
+actor Usuario2
+
+activate Servidor
+Usuario1 -> Servidor: POST: webrtc
+Servidor --> Servidor: GuardaSDP y busca IPs en la misma red
+Usuario1 -> Servidor: gettime
+Servidor --> Usuario1: time(momentoActual)
+... 10 veces repite esta accion para compensar Jitter ...
+
+Usuario2 -> Servidor: POST: webrtc
+Servidor --> Servidor: GuardaSDP y busca IPs en la misma red
+Servidor --> Usuario2: sincronizarRTC con usuario 1
+Usuario2 -> Servidor: GET: webrtc?usuarioid=usuario1
+Servidor --> Usuario2: SDP de Usuario1
+Usuario2 --> Usuario2: CreateAnswerSDP
+Usuario2 -> Servidor: POST: answerrtc
+Servidor --> Usuario1: answerRTC
+Usuario1 --> Usuario1: IniciarActualizacionRTC
+Usuario1 --> Usuario2: IniciaConeccion
+Usuario2 --> Usuario1: gettime
+Usuario1 --> Usuario2: time
+... 10 veces repite esta accion para compensar Jitter ...
+
+@enduml
