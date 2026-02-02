@@ -1,0 +1,51 @@
+@startuml
+' Diagrama de despliegue - Fogón
+
+skinparam shadowing false
+skinparam componentStyle rectangle
+skinparam defaultFontName "Segoe UI"
+
+node "Dispositivo del usuario" as user_device {
+  node "Sistema Operativo" as os {
+    node "Navegador" as browser {
+      artifact "Fogón (web responsiva)" as web_app
+    }
+  }
+  node "Salida de audio" as audio_out <<device>>
+}
+
+cloud "GitHub Pages" as github_pages {
+  artifact "Índice / Frontend" as gh_index
+  artifact "Canciones" as gh_songs
+}
+
+cloud "Render.com" as render_cloud {
+  node "Servidor Fogón" as fogon_server {
+    artifact "API HTTP" as api_http
+    artifact "WebSocket" as api_ws
+  }
+}
+
+cloud "MongoDB Inc" as mongodb_cloud {
+  database "Base de datos MongoDB" as mongo_db
+}
+
+node "Consola" as console_host {
+  artifact "Script Python" as python_script
+}
+
+cloud "Internet" as internet
+
+web_app -- audio_out : Reproducción
+
+web_app .. internet
+github_pages .. web_app : HTML/CSS/JS/INDICE
+
+web_app .. internet : HTTP / WebSocket
+internet .. api_http : HTTP
+internet .. api_ws : WebSocket
+
+fogon_server .. mongo_db : Lectura/Escritura
+python_script .. mongo_db : Actualiza datos
+
+@enduml

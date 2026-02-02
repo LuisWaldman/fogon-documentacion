@@ -1,5 +1,26 @@
 \subsubsection{Vista de Desarrollo}
 \label{sec:vista-desarrollo}
 
-La vista de desarrollo describe la organización del software desde la perspectiva del programador, incluyendo la estructura de módulos, gestión de código fuente y estrategia de build.
+Estos son los principales paquetes del cliente, las vistas, los helpers y la aplicacion.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png}
+\caption{Diagrama de paquetes del cliente}
+\end{figure}
+
+En el servidor, los servicios acceden a los datos, a veces de modo 
+directo o usando algunas reglas de negocios para listas o 
+usuarios.
+Los controladores usan a los servicios para atender las peticiones
+y manipular los datos y la aplicacion, es creada desde
+el main.
+ 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png}
+\caption{Diagrama de paquetes del servidor}
+\end{figure}
 

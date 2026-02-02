@@ -1,0 +1,85 @@
+@startuml
+' Diagrama de paquetes - Cliente
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam linetype ortho
+
+title Diagrama de paquetes - cliente (src)
+
+package "src" as SRC {
+  package "app" as APP {
+    [main.ts] as MAIN
+    [App.vue] as APPV
+    [router.ts] as ROUTER
+    [aplicacion.ts] as APLICACION
+    [EstadosAplicacion.ts] as ESTADOS
+  }
+
+  package "views" as VIEWS {
+    [home.vue]
+    [tocar.vue]
+    [editar.vue]
+    [buscar.vue]
+    [configurar.vue]
+  }
+
+  package "components" as COMPONENTS {
+    package "comp_cabecera" as C_CABECERA
+    package "comp_home" as C_HOME
+    package "comp_tocar" as C_TOCAR
+    package "comp_editar" as C_EDITAR
+    package "comp_configurar" as C_CONFIG
+  }
+
+  package "stores" as STORES {
+    [appStore.ts]
+  }
+
+  package "helpers" as HELPERS {
+    [HelperObtenerCancionURL.ts]
+  }
+
+  package "types" as TYPES {
+    [vexchords.d.ts]
+  }
+
+  package "modelo" as MODELO {
+    package "cancion"
+    package "conexion"
+    package "display"
+    package "indices"
+    package "midi"
+    package "pentagrama"
+    package "reproduccion"
+    package "sincro"
+    package "sonido"
+    package "sugerencias"
+  }
+}
+
+' Dependencias principales
+MAIN --> APPV
+MAIN --> ROUTER
+MAIN --> STORES
+
+APPV --> VIEWS
+APPV --> COMPONENTS
+APPV --> STORES
+APPV --> MODELO
+APPV --> HELPERS
+
+VIEWS --> COMPONENTS
+VIEWS --> STORES
+VIEWS --> MODELO
+VIEWS --> HELPERS
+
+COMPONENTS --> MODELO
+COMPONENTS --> HELPERS
+COMPONENTS --> TYPES
+
+STORES --> MODELO
+STORES --> HELPERS
+
+MODELO --> TYPES
+
+@enduml

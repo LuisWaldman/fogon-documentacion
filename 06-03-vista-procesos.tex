@@ -9,27 +9,44 @@ uno similar para DetenerReproduccion,CambiarCompas, CambiarLaListaDeCanciones, e
 Luego, mostraremos la secuencia con la que logra sincronizar relojes con el servidor y
 entre clientes usando WebRTC.
 
+\paragraph{IniciarReproduccion en modo local}
+
+El reproductor delega en la estrategia "StrategyReproductor" desconectada, que prepara la cancion en el cliente.
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-clase-cancion/diagrama-secuencia-iniciarcancion}
-\caption{Diagrama de de secuencia de sincronizacion}
+\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarcancionunica}
+\caption{Secuencia de inicio de reproduccion en modo local}
+\end{figure}
+
+\paragraph{IniciarReproduccion en un Fogon} 
+
+Cuando se esta en una sesion, se manda al servidor la orden de iniciar reproduccion, 
+y se espera la señal de inicio coordinado.
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuencia-iniciarcanciondistribuido}
+\caption{Secuencia de inicio de reproduccion distribuida: esta vez, la estrategia incluye al servidor y luego se inicia coordinadamente.}
 \end{figure}
 
 
+\paragraph{Sincronizar relojes} 
+
+Se muestran dos tipos de sincrozicanciones que se realizan en el sistema: 
+por socket, cuando el usario se conecta al servidor, sincorniza su reloj con 
+este.
+Cuando se conecta a un fogon, envia una oferta WebRTC para establecer un canal.
+La aplicacion puede sincronizarse con un usuario particular a pedido del servidor
+ o del usuario: el primero porque los supone en la misma 
+red WiFi, el usuario desde la configuracion.
+Vemos el intercambio de mensajes:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-clase-cancion/diagrama-secuencia-iniciarcanciondistribuido.}
-\caption{Diagrama de de secuencia de sincronizacion}
-\end{figure}
-
-
-\paragraph{IniciarReproduccion}
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-clase-cancion/diagrama-secuencia-sincronizar}
-\caption{Diagrama de de secuencia de sincronizacion}
+\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar}
+\caption{Secuencia de sincronizacion de reloj}
 \end{figure}
 

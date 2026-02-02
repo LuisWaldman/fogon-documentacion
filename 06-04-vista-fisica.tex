@@ -1,3 +1,21 @@
 \subsubsection{Vista Física}
 \label{sec:vista-fisica}
 
+En el diagrama de despliegue vemos que nuestra aplicacion
+cliente es Web y Progresiva, por lo que corre en el 
+dispositivo del usuario, aunque busca en github pages
+el html, css y js necesarios; ademas de los indices.
+
+El servidor en Go esta alojado en los servidores de Render y
+se conectan a una base MongoDB Atlas.
+
+Con algunos scripts, se actualizan canciones,
+por ejemplo para extraer la letra del video de
+YouTube.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{out/diaguml/diagrama-despliegue/diagrama-despliegue.png}
+\caption{Diagrama de despliegue}
+\end{figure}
+

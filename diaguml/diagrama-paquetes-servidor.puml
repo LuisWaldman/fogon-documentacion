@@ -1,0 +1,53 @@
+@startuml
+' Diagrama de paquetes - Servidor
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam linetype ortho
+
+title Diagrama de paquetes - servidor
+
+package "servidor" as SRV {
+  [main.go] as MAIN
+
+  package "server" as SERVER
+  package "controllers" as CONTROLLERS
+  package "servicios" as SERVICIOS
+  package "negocio" as NEGOCIO
+  package "modelo" as MODELO
+  package "data" as DATA
+  package "datos" as DATOS
+  package "config" as CONFIG
+  package "interfaces" as INTERFACES
+  package "aplicacion" as APLICACION
+  package "mocks" as MOCKS
+}
+
+' Dependencias principales
+MAIN --> SERVER
+MAIN --> CONFIG
+MAIN --> APLICACION
+
+SERVER --> CONTROLLERS
+SERVER --> SERVICIOS
+SERVER --> INTERFACES
+SERVER --> CONFIG
+
+CONTROLLERS --> SERVICIOS
+CONTROLLERS --> INTERFACES
+
+SERVICIOS --> NEGOCIO
+SERVICIOS --> MODELO
+SERVICIOS --> DATA
+
+NEGOCIO --> MODELO
+NEGOCIO --> DATA
+
+MODELO --> DATOS
+DATA --> DATOS
+
+APLICACION --> SERVICIOS
+APLICACION --> MODELO
+
+MOCKS ..> INTERFACES
+
+@enduml
