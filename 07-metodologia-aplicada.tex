@@ -1,27 +1,190 @@
 \section{Metodología Aplicada}
 \label{sec:metodologia-aplicada}
 
-Describir la metodología empleada para el desarrollo del trabajo.
+Describiremos la metodología aplicada y la planificacion inicial,
+despues comentaremos los cambios al plan inicial que 
+se acordaron durante el desarrollo del proyecto.
 
-\subsection{Marco Metodológico}
-Explicar el marco metodológico utilizado (ágil, cascada, etc.).
+\subsection{Metodología del trabajo}
+El trabajo tendrá 6 hitos en los que se publicará la aplicación. Para
+alcanzar cada uno habrá entregas incrementales periódicas, la mayoría de
+una sola etapa y algunas de 2. Gestionaremos las tareas utilizando el
+siguiente proyecto de GitHub: \url{https://github.com/users/LuisWaldman/projects/4}.
+Detallamos a continuación las tareas que integran a cada hito.
 
-\subsection{Proceso de Desarrollo}
-Detallar las etapas del proceso de desarrollo:
-\begin{enumerate}
-    \item Análisis de requisitos
-    \item Diseño de la solución
-    \item Implementación
-    \item Pruebas
-    \item Despliegue
-\end{enumerate}
+\subsection{Plan}
 
-\subsection{Herramientas de Desarrollo}
-\begin{itemize}
-    \item Herramienta 1
-    \item Herramienta 2
-    \item Herramienta 3
-\end{itemize}
+\subsubsection{Tocar}
+Finaliza con el sitio desplegado en \url{http://www.fogon.ar/} con
+integración continua. Permite tocar algunas canciones.
 
-\subsection{Gestión del Proyecto}
-Describir cómo se gestionó el proyecto (sprints, reuniones, etc.).
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+SetUp inicial: armar el repositorio, crear la aplicación Vue.js + TypeScript, los módulos de prueba y el despliegue automático & 12 \\
+Definir JSON para canciones y armar ejemplos & 4 \\
+Armar estructura de la aplicación & 4 \\
+Armar menú & 2 \\
+Controlador de tiempo & 8 \\
+Armar pantalla tocar acordes & 4 \\
+Armar pantalla tocar letra & 4 \\
+Armar pantalla tocar letra y acordes & 12 \\
+\hline
+\textbf{Total} & \textbf{50} \\
+\hline
+\end{tabular}
+
+\subsubsection{Sincronizar}
+Varios usuarios pueden unirse a una sesión y reproducir juntos una lista de
+canciones.
+
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+Definir protocolo & 8 \\
+Login de usuarios con Google (extendible) & 8 \\
+SetUp inicial del servidor & 10 \\
+Administración de conexiones y estructura & 30 \\
+Permitir crear una sesión desde la aplicación web & 6 \\
+Permitir unirse a una sesión desde la aplicación web & 6 \\
+Permite ver el estado de las sesiones desde la configuración de la aplicación web & 12 \\
+La canción se reproduce con el ritmo de la sesión cuando el usuario está conectado & 12 \\
+Los distintos usuarios pueden mandar comandos al servidor que se reflejan en todos los conectados & 12 \\
+Permite que la sesión siga viva cuando se desconecta el Admin, asignando el rol & 4 \\
+\hline
+\textbf{Total} & \textbf{108} \\
+\hline
+\end{tabular}
+
+\subsubsection{Editar}
+Agrega la administración de usuarios, que pueden editar y compartir las
+canciones.
+
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+Pantalla de configuración & 6 \\
+Administración de usuarios & 6 \\
+Configuración y despliegue de una base de datos MongoDB & 6 \\
+Permitir obtener la canción de distintos repositorios: solicitud HTTP de canción pública en el sitio, IndexDB o en el servidor, canciones propias o de otros usuarios & 4 \\
+Permite cambiar datos básicos de la canción & 8 \\
+Permitir modificar la secuencia de acordes (el orden en que se reproducen las partes) & 4 \\
+Permitir modificar los acordes de las partes: unir, cambiar, etc. & 10 \\
+Permite modificar las partes: agregar, eliminar, combinar o dividir & 10 \\
+Permite modificar la letra en la vista de letras y acordes & 20 \\
+Permite guardar la canción en el servidor, el IndexDB o el disco duro & 10 \\
+Permite cambiar la escala (cambia todos los acordes de la canción) & 8 \\
+\hline
+\textbf{Total} & \textbf{92} \\
+\hline
+\end{tabular}
+
+\subsubsection{Buscar y listar}
+El usuario puede buscar canciones en distintos repositorios y armar y
+compartir listas de reproducción.
+
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+Sincronizar relojes por WebRTC & N/D \\
+Mostrar acordes de notas en cifrado español & N/D \\
+Afinador & N/D \\
+Sincronizar con YouTube & N/D \\
+Mostrar el círculo como instrumento & N/D \\
+Actualizar versión automáticamente & N/D \\
+Necesidad: poder ver la canción en distintos formatos & N/D \\
+Mostrar acordes en teclado & N/D \\
+\hline
+\textbf{Total} & \textbf{N/D} \\
+\hline
+\end{tabular}
+
+\subsubsection{Tocar y editar partituras}
+Muestra las partituras con VexFlow, permite editarlas y cargarlas desde
+archivos XMLMusic.
+
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+Agregar a JSON de la canción la posibilidad de guardar partituras para distintos instrumentos & 6 \\
+Permitir desde la aplicación web definir un instrumento default para que te muestre la partitura & 3 \\
+Mostrar partituras con VexFlow & 25 \\
+Permitir editar partituras con VexFlow & 50 \\
+Permitir agregar partituras desde archivos en el formato XMLMusic & 16 \\
+Generar ejemplos de partituras & 2 \\
+\hline
+\textbf{Total} & \textbf{102} \\
+\hline
+\end{tabular}
+
+\subsubsection{Más instrumentos y detalles}
+
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+Reparar bugs de versiones anteriores & 10 \\
+Vista de acordes con dibujos de cómo sería en la guitarra & 15 \\
+Vista de tablaturas de riffs en guitarra & 15 \\
+Vista para armónica & 15 \\
+Reproducir las partituras en formato MIDI & 20 \\
+\hline
+\textbf{Total} & \textbf{75} \\
+\hline
+\end{tabular}
+
+\subsection{Herramientas Utilizadas}
+
+* El Visual Code como entorno de desarrollo integrado (IDE) principal para escribir y depurar el código.
+* Vite como herramienta de construcción y empaquetado del proyecto.
+* Git y GitHub para el control de versiones y la colaboración en el desarrollo del proyecto.
+* El modelo Claude Sonnet 4.5 para desarrollo de pruebas, de codigo y de vistas.
+* Jira para la gestión de proyectos y seguimiento de tareas.
+
+\subsection{Desarrollo de la aplicación}
+
+El desarrollo comenzó el 11 de Julio de 2025 con la 
+aprobacion de la propuesta de trabajo.
+
+En la primer entrega, se contruyó el repositorio con integracion
+continua, de modo que para cada commit se ejecutaban pruebas y 
+verificacion de estilo de codigo. Cada branch al main, genera
+ademas el despliegue de la aplicación.
+
+
+En las siguientes entregas, la de la sesion sincronizada 
+y la de la edicion, vimos necesario adelantar las tareas 
+relativas a pentagramas.
+
+La integracion con VexFlow efectivamente fue compleja y
+adelantar su desarrollo termino siendo una buena decicion.
+
+En la ultima entrega planificada, agregamos listas y busquedas
+tanto en el servidor como en la IndexedDB del navegador.
+
+Durante todo el desarrollo, sentimos la necesidad de agregar
+nuevos features, que desarrollamos como una nueva entrega:
+
+
+
+\begin{tabular}{|p{0.75\textwidth}|r|}
+\hline
+\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\hline
+Armar índices & 6 \\
+Armar filtros & 6 \\
+Obtener canciones mediante web scraping de internet & 12 \\
+Mostrar búsqueda en un gran repositorio & 4 \\
+Mostrar listas & 8 \\
+Permitir guardar/editar listas & 8 \\
+Definir una lista como lista de reproducción actual & 2 \\
+Desde ``Tocar'' reproducir la lista de canciones actual & 6 \\
+\hline
+\textbf{Total} & \textbf{52} \\
+\hline
+\end{tabular}

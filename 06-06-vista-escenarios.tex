@@ -5,25 +5,43 @@ La vista de escenarios (la "+1" del modelo de Kruchten) ilustra cómo las otras 
 trabajan juntas a través de casos de uso concretos. Documentamos los escenarios principales 
 usando el formato de pruebas de aceptación de Reqnroll (Gherkin).
 
+En este repositorio , estan desarrrolladas las pruebas automaticas 
+con Playwright que validan estos escenarios:
+https://github.com/LuisWaldman/fogon-pruebas/
+
+
 \paragraph{Escenario 1: Tocar una canción en solitario}
 
 \textbf{Contexto:} Un músico quiere buscar y tocar una canción desde su dispositivo.
 
 \begin{lstlisting}[caption=Escenario: Búsqueda y reproducción de canción]
-Feature: Tocar canciones
-  Como musico
-  Quiero buscar y tocar canciones
-  Para practicar con mi instrumento
+Feature: Buscar canciones
+    El fogon permite buscar canciones por autor y por nombre
+    pero tambien por caracteristicas tipicas como la escala, el tempo o la cantidad de acordes.
 
-Scenario: Buscar y reproducir una cancion
-  Given que soy un usuario no autenticado
-  When ingreso "la maquina de ser feliz" en el buscador
-  Then veo una lista de resultados con esa cancion
-  When selecciono "La maquina de ser feliz - Charly Garcia"
-  Then veo la vista de mi instrumento (acordes para guitarra)
-  When presiono el boton de reproducir
-  Then comienza el autoscroll sincronizado con el metronomo
-  And el compas actual se resalta automaticamente
+    Scenario: Busca paloma de calamaro
+        Given Usuario va al fogon
+        When busca "flaca calamaro"
+        Then aparecen resultados relacionados con "flaca"
 \end{lstlisting}
 
-\textbf{Vistas involucradas:}
+
+\textbf{Contexto:} Dos musicos quieren tocar una canción juntos desde sus dispositivos.
+
+\begin{lstlisting}[caption=Escenario: Fogon]
+Feature: Sesiones colaborativas
+    La principal particularidad del fogon es la de mantener sesiones compartidas
+    El estado compartido es la cancion, la lista de canciones y los roles de cada integrante 
+    en la sesion (o fogon) 
+
+    Scenario: Dos usuarios se conectan
+        Given "Usuario1" accede a la aplicacion
+        And "Usuario2" accede a la aplicacion
+        And "Usuario2" inicia un fogon
+        And "Usuario2" carga la cancion "Homero"
+	    When "Usuario1" se une al fogon de "Usuario2"
+        And "Usuario1" va a tocar
+	Then "Usuario1" ve la cancion "Homero" en reproduccion
+        And "Usuario2" y "Usuario1" reproducen la cancion de modo calibrado
+\end{lstlisting}
+
