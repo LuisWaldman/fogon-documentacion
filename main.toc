@@ -64,24 +64,12 @@
 \contentsline {subsection}{\numberline {5.3}Resultados Obtenidos}{33}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Análisis de Resultados}{33}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Validación con Usuarios}{33}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Cronogramas}{34}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Cronograma Planificado}{34}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Cronograma Real}{34}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Desviaciones y Ajustes}{34}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Riesgos y Lecciones Aprendidas}{35}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Identificación de Riesgos}{35}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Gestión de Riesgos}{35}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Problemas Encontrados}{35}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Lecciones Aprendidas}{35}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Impactos Sociales y Ambientales del Proyecto}{36}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Impacto Social}{36}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Impacto Ambiental}{36}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Responsabilidad Social y Ética}{36}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Medidas de Mitigación}{36}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Desarrollos Futuros}{37}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Mejoras Propuestas}{37}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Funcionalidades Adicionales}{37}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Escalabilidad}{37}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Investigación Futura}{37}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Conclusiones Finales}{37}{subsection.9.5}%
-\contentsline {section}{Referencias}{38}{subsection.9.5}%
+\contentsline {section}{\numberline {6}Concluciones}{34}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Desarrollos Futuros}{34}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Mejoras Propuestas}{34}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Funcionalidades Adicionales}{34}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Escalabilidad}{34}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}Investigación Futura}{34}{subsubsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.2}Lecciones aprendidas}{34}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Conclusiones}{34}{subsection.6.3}%
+\contentsline {section}{Referencias}{35}{subsection.6.3}%
