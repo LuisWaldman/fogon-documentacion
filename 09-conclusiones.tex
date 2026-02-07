@@ -1,86 +1,86 @@
-\section{Concluciones}
-\label{sec:concluciones}
+\section{Conclusiones}
+\label{sec:conclusiones}
 
 Resumen final del trabajo, destacando los objetivos alcanzados y el valor del sistema desarrollado.
 
 \subsection{Desarrollos Futuros}
 
-El sistema esta pensado para la escalabilidad, en modo "desarrollador", 
-en las opciones de Configuración se puede definir el servidor al que se conecta.
-Si el fogon tiene exito mundial, nos bastaria con agregar mas servidores 
-distribuidos por region e implementar un paso previo en el que el cliente
-se conecta con un balanceador de carga que lo redirige al servidor mas cercano.
+El sistema está pensado para la escalabilidad, en modo "desarrollador", 
+en las opciones de configuración se puede definir el servidor al que se conecta.
+Si el fogón tiene éxito mundial, nos bastaría con agregar más servidores 
+distribuidos por región e implementar un paso previo en el que el cliente
+se conecta con un balanceador de carga que lo redirige al servidor más cercano.
 
-El diseño de la aplicacion, y principalmente Vue..js, permite agregar 
-nuevas vistas sincronizadas. Podriamos agregar alguna que muestre
+El diseño de la aplicación, y principalmente Vue.js, permite agregar 
+nuevas vistas sincronizadas. Podríamos agregar alguna que muestre
 el teclado con las notas bajando y alguna vista para bateristas.
 
-Otra funcionalidad que quedó pendiente, es la de que la aplicacion no avanze 
-el tiempo según transcurre, si no según escucha lo que escucha que el musico esta tocando.
-Asi, podria ayudar "esperando" a un aprendiz.
+Otra funcionalidad que quedó pendiente, es la de que la aplicación no avance 
+el tiempo según transcurre, sino según escucha lo que escucha que el músico está tocando.
+Así, podría ayudar "esperando" a un aprendiz.
 
 Nos queda agregar algún modo de editar ritmo como acompañamiento, que sumado 
-a los pentagramas de VexFlow, permitiria editar canciones completas.
+a los pentagramas de VexFlow, permitiría editar canciones completas.
 
-Aun hace falta sumar mas repertorio. Durante el desarrollo se crearon 
+Aún hace falta sumar más repertorio. Durante el desarrollo se crearon 
 varias canciones y algunos algoritmos para obtener los acordes desde 
 un cancionero, y las letras de las canciones desde Youtube. 
 
-Igual, hace falta crear mas canciones con letra + acordes + partitura + video 
-que permitan el uso completo de la aplicacion.
+Igual, hace falta crear más canciones con letra + acordes + partitura + video 
+que permitan el uso completo de la aplicación.
 
 \subsection{Lecciones aprendidas}
 
 Durante el desarrollo del proyecto, el año 2025, el uso de la IA en programación 
-paso de ser recomendada a inevitable. A fines de septiembre, cuando empezaba a programar una funcion,
-ya aparecia sugerida, a veces mejor de lo que pensé, a veces antes de que lo piense.
+pasó de ser recomendada a inevitable. A fines de septiembre, cuando empezaba a programar una función,
+ya aparecía sugerida, a veces mejor de lo que pensé, a veces antes de que lo piense.
 
-Como todos, caí en la tentacion de hacer 'no-code' en algunas funcionalidad: traspasar tonalidad de canciones, 
+Como todos, caí en la tentación de hacer 'no-code' en algunas funcionalidades: traspasar tonalidad de canciones, 
 contar versos en poemas, pasar el audio a notas, etc. Pero cuando algún problema empezaba a ser complejo,
-una acción de la IA deshacia lo que habia hecho anteriormente. Lo mismo pasaba con los humanos 
-y ya teniamos una solución: guiar el desarrollo con pruebas.
+una acción de la IA deshacía lo que había hecho anteriormente. Lo mismo pasaba con los humanos 
+y ya teníamos una solución: guiar el desarrollo con pruebas.
 
-Durante la construccion del proyecto el modelo claude sonet 4.5, guiado por pruebas (que hasta a veces escribia con el mismo),
-intervino en el desarrollo de la mayoria de las funcionalidades y en la corrección de bugs.
+Durante la construcción del proyecto el modelo claude sonet 4.5, guiado por pruebas (que hasta a veces escribía con el mismo),
+intervino en el desarrollo de la mayoría de las funcionalidades y en la corrección de bugs.
 
-Sobre el final del proyecto, cuando este tenia distintas vistas y estados, se hizo necesario un modo de probar la aplicación en
- su conjunto. Sobre el final del desarrolló, armé test punta a punta con Playwright; pero si tendria que rehacer el 
- proyecto en 2026, lo haria desde el principio con pruebas de integración, o sea: desarrollo guiado por comportamiento.
+Sobre el final del proyecto, cuando este tenía distintas vistas y estados, se hizo necesario un modo de probar la aplicación en
+ su conjunto. Sobre el final del desarrollo, armé test punta a punta con Playwright; pero si tuviera que rehacer el 
+ proyecto en 2026, lo haría desde el principio con pruebas de integración, o sea: desarrollo guiado por comportamiento.
 
   La IA va a seguir tomando lugar: en este momento que escribo, si dejo 
- de tipear un ratito, una IA me sugiere como terminar la frase. 
- El profesor que lea algun trabajo profesional 
- seguro lo va a pasar por un filtro con IA y el alumno que lo presenta tambien. 
+ de tipear un ratito, una IA me sugiere cómo terminar la frase. 
+ El profesor que lea algún trabajo profesional 
+ seguro lo va a pasar por un filtro con IA y el alumno que lo presenta también. 
  Esto nos deja a todos un elevado nuevo piso y nos posibilita alturas mayores.
 
- Aves de mal aguero anuncian un cambio en el estado del arte cada 1 minuto, 
- porque asumen al humano totalmente ausente de las desiciones tecnologicas.
- Pero si el humano quiere seguir guiando el desarrollo, lo va a tener que hacer a travez de una arquitectura clara y 
+ Aves de mal agüero anuncian un cambio en el estado del arte cada 1 minuto, 
+ porque asumen al humano totalmente ausente de las decisiones tecnológicas.
+ Pero si el humano quiere seguir guiando el desarrollo, lo va a tener que hacer a través de una arquitectura clara y 
  de pruebas que validen el comportamiento.
 
  \subsection{Conclusiones}
 
-El proyecto fue ambicioso, no solo queria que el proyecto sea novedoso, 
-sino que el conjunto de tecnologias utilizadas sea el ideal y que 
+El proyecto fue ambicioso, no solo quería que el proyecto sea novedoso, 
+sino que el conjunto de tecnologías utilizadas sea el ideal y que 
 reflejara lo que aprendí en la facultad.
 
-Con respecto a las herramientas, el framework vitejs, con el codigo regulado por 'Lint' y pruebas unitarias en una integracion continua que termina 
-desplegandose en el fogon.ar; terminó resultando ser una excelente eleccion. Sobre el servidor, 
-Golang hizo facil crear APIs y procesos multihilos para atender a los clientes; y tanto en  Render.com como Fly.io, 
-pudimos hacer despliegues automaticos.
+Con respecto a las herramientas, el framework vitejs, con el código regulado por 'Lint' y pruebas unitarias en una integración continua que termina 
+desplegándose en el fogon.ar; terminó resultando ser una excelente elección. Sobre el servidor, 
+Golang hizo fácil crear APIs y procesos multihilos para atender a los clientes; y tanto en  Render.com como Fly.io, 
+pudimos hacer despliegues automáticos.
 
-Sobre lo aprendido en la facultad, En Tecnicas de Diseño, dejamos de " solo programar " para empezar a pensar los sistemas por su arquitectura 
+Sobre lo aprendido en la facultad, En Técnicas de Diseño, dejamos de " solo programar " para empezar a pensar los sistemas por su arquitectura 
 y a ordenar los problemas por los patrones que lo resuelven. Luego, en Introducción a Sistemas Distribuidos 
-y en Sistemas Distribuidos entendimos que es un protococolo, como calibrar relojes, que es y como se elige un proceso lider. 
+y en Sistemas Distribuidos entendimos qué es un protocolo, cómo calibrar relojes, qué es y cómo se elige un proceso líder. 
 
-Esto lo utilicé para pensar los desafios principales en la aplicación. Para el pentagrama en VexFlow, por ejemplo,
-decidimos usar el patron Facade en vez de Proxy, y al revez para administrar el video; las multiples vistas son rehutilizables y extensibles
- porque estan separadas del modelo y del controlador; El estado compartido del Fogon, es pensado como "estado compartido" porque toda la aplicacion esta pensada en los terminos 
+Esto lo utilicé para pensar los desafíos principales en la aplicación. Para el pentagrama en VexFlow, por ejemplo,
+decidimos usar el patrón Facade en vez de Proxy, y al revés para administrar el video; las múltiples vistas son reutilizables y extensibles
+ porque están separadas del modelo y del controlador; El estado compartido del Fogón, es pensado como "estado compartido" porque toda la aplicación está pensada en los términos 
 aprendidos en Sistemas Distribuidos.
 
-Ademas, desarrollé ademas otras herramientas para medir y validar la exactitud de la calibracion, 
-lo que muestra un rigor cientifico caracteristico de la academia.
+Además, desarrollé otras herramientas para medir y validar la exactitud de la calibración, 
+lo que muestra un rigor científico característico de la academia.
 
 Por todo esto creo que el fogon.ar suma a los conocimientos adquiridos en FIUBA una mirada original,
-, llevada a cabo con herramientas del estado del arte actual, con rigor academico y cientifico, 
+llevada a cabo con herramientas del estado del arte actual, con rigor académico y científico, 
 y con un resultado que sobrepasa los objetivos.
