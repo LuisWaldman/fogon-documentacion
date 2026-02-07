@@ -62,4 +62,46 @@ Y el +1: la vista de escenarios, que seran descriptos en formato Reqnroll. \cite
 
 
 \subsection{Tecnologías Utilizadas}
-Listar y justificar las tecnologías seleccionadas.
+
+Para el desarrollo de "El Fogón" se seleccionó un conjunto de tecnologías modernas con el objetivo de construir una aplicación robusta, escalable y de alto rendimiento.
+
+\subsubsection{Frontend}
+\begin{itemize}
+    \item \textbf{Vue.js:} Se eligió como el framework principal para la interfaz de usuario por su curva de aprendizaje amigable, su reactividad y su ecosistema de componentes. Permitió crear vistas complejas e interactivas de manera eficiente.
+    \item \textbf{TypeScript:} Se utilizó en todo el frontend para agregar tipado estático a JavaScript, lo que mejoró la robustez del código, facilitó la detección temprana de errores y mejoró la experiencia de desarrollo.
+    \item \textbf{Vite:} Como herramienta de construcción y servidor de desarrollo, Vite ofreció un arranque casi instantáneo y recarga en caliente (Hot Module Replacement) extremadamente rápida, agilizando significativamente el ciclo de desarrollo.
+    \item \textbf{VexFlow:} Es la librería clave para el renderizado de partituras. Aunque su integración fue compleja, era indispensable para cumplir con los requisitos de visualización de notación musical estándar.
+\end{itemize}
+
+\subsubsection{Backend}
+\begin{itemize}
+    \item \textbf{Golang:} Se seleccionó para el desarrollo del servidor por su excelente rendimiento, su concurrencia nativa (ideal para manejar múltiples conexiones WebSocket y WebRTC) y su simplicidad para crear APIs RESTful y servicios multihilo.
+\end{itemize}
+
+\subsubsection{Comunicación y Sincronización}
+\begin{itemize}
+    \item \textbf{WebSocket:} Es la base para la comunicación en tiempo real entre el cliente y el servidor, permitiendo la gestión de sesiones y el envío de comandos de control.
+    \item \textbf{WebRTC:} Se empleó para la sincronización de alta precisión de los relojes entre clientes, un requisito crucial para la reproducción musical distribuida y la compensación de jitter.
+\end{itemize}
+
+\subsubsection{Base de Datos}
+\begin{itemize}
+    \item \textbf{MongoDB:} Se utilizó como base de datos NoSQL para almacenar la información de usuarios y canciones, gracias a su flexibilidad de esquema que se adapta bien a la estructura de los datos de la aplicación.
+\end{itemize}
+
+\subsubsection{Pruebas y Calidad de Código}
+\begin{itemize}
+    \item \textbf{NUnit y Playwright:} Se combinaron para realizar pruebas de aceptación de punta a punta, automatizando la interacción con la interfaz de usuario en un navegador real para validar los flujos de la aplicación de manera integral.
+    \item \textbf{Reqnroll:} Se adoptó este framework de BDD para escribir los escenarios de prueba en un formato legible (Gherkin), facilitando la colaboración y asegurando que el software se comporte como se espera desde la perspectiva del usuario.
+\end{itemize}
+
+\subsubsection{Gestión y Despliegue (DevOps)}
+\begin{itemize}
+    \item \textbf{Git y GitHub:} Se utilizaron para el control de versiones del código y la gestión del proyecto, incluyendo el seguimiento de tareas mediante GitHub Projects.
+    \item \textbf{Render.com y Fly.io:} Estas plataformas de Platform as a Service (PaaS) se usaron para el despliegue continuo y el alojamiento tanto del frontend como del backend, facilitando la publicación de nuevas versiones de forma automática.
+\end{itemize}
+
+\subsubsection{Otras Herramientas}
+\begin{itemize}
+    \item \textbf{Modelo Claude:} Modelo de IA
+\end{itemize}

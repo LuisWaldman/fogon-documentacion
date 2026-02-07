@@ -47,19 +47,33 @@ Sobre el final del proyecto, cuando este tenia distintas vistas y estados, se hi
  su conjunto. Sobre el final del desarrolló, armé test punta a punta con Playwright; pero si tendria que rehacer el 
  proyecto en 2026, lo haria desde el principio con pruebas de integración, o sea: desarrollo guiado por comportamiento.
 
- - Sumarle a todo la aprendido el TDD
-- minimo de un proyecto, la IA
+ Aves de mal aguero anuncian un cambio en el estado del arte cada 1 minuto, porque asumen al humano totalmente ausente de las desiciones tecnologicas.
+ Pero si el humano quiere seguir guiando el desarrollo, lo va a tener que hacer a travez de una arquitectura clara y 
+ de pruebas que validen el comportamiento.
 
  \subsection{Conclusiones}
 
-El proyecto fue ambicioso, no solo queria que el proyecto sea novedoso, sino que el conjunto de tecnologias utilizadas sea el ideal.
-En ese sentido, el framework vitejs, con el codigo regulado por 'Lint' y pruebas unitarias en una integracion continua que termina 
-desplegandose en el fogon.ar; terminó resultando ser una buena eleccion. Sobre el servidor, 
+El proyecto fue ambicioso, no solo queria que el proyecto sea novedoso, 
+sino que el conjunto de tecnologias utilizadas sea el ideal y que 
+reflejara lo que aprendí en la facultad.
+
+Con respecto a las herramientas, el framework vitejs, con el codigo regulado por 'Lint' y pruebas unitarias en una integracion continua que termina 
+desplegandose en el fogon.ar; terminó resultando ser una excelente eleccion. Sobre el servidor, 
 Golang hizo facil crear APIs y procesos multihilos para atender a los clientes; y tanto en  Render.com como Fly.io, 
 pudimos hacer despliegues automaticos.
 
-Los desafios principales (el pentagrama en VexFlow, el estado compartido del Fogon, las miltiples vistas sincronizadas y editadas) 
-fueron superados, y tambien se recorrieron otros caminos que terminan mejorando la aplicación.
+Sobre lo aprendido en la facultad, En Tecnicas de Diseño, dejamos de " solo programar " para empezar a pensar los sistemas por su arquitectura 
+y a ordenar los problemas por los patrones que lo resuelven. Luego, en Introducción a Sistemas Distribuidos 
+y en Sistemas Distribuidos entendimos que es un protococolo, como calibrar relojes, que es y como se elige un proceso lider. 
 
-Asi que soy el mas poronga ingeniero, denme el titulo hijos de puta!
+Esto lo utilicé para pensar los desafios principales en la aplicación. Para el pentagrama en VexFlow, por ejemplo,
+decidimos usar el patron Facade en vez de Proxy, y al revez para administrar el video; las multiples vistas son rehutilizables y extensibles
+ porque estan separadas del modelo y del controlador; El estado compartido del Fogon, es pensado como "estado compartido" porque toda la aplicacion esta pensada en los terminos 
+aprendidos en Sistemas Distribuidos.
 
+Ademas, desarrollé ademas otras herramientas para medir y validar la exactitud de la calibracion, 
+lo que muestra un rigor cientifico caracteristico de la academia.
+
+Por todo esto creo que el fogon.ar suma a los conocimientos adquiridos en FIUBA una mirada original,
+, llevada a cabo con herramientas del estado del arte actual, con rigor academico y cientifico, 
+y con un resultado que sobrepasa los objetivos.

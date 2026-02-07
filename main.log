@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  6 FEB 2026 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  7 FEB 2026 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,19 +940,29 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 5.
 
 [4]) [5] (03-agradecimientos.tex) [6] (04-introduccion.tex [7]) [8]
-(05-estado-del-arte.tex [9]
+(05-estado-del-arte.tex
+LaTeX Info: Symbol \textasciiacute not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 40.
+LaTeX Info: Symbol \textasciiacute not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 40.
+LaTeX Info: Symbol \textasciiacute not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 42.
+ [9]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
  [10] [11]) [12] (06-solucion-implementada.tex
-<imagenes/tocarMaquinaSerFeliz.png, id=389, 341.47575pt x 378.213pt>
+<imagenes/tocarMaquinaSerFeliz.png, id=390, 341.47575pt x 378.213pt>
 File: imagenes/tocarMaquinaSerFeliz.png Graphic file (type png)
 <use imagenes/tocarMaquinaSerFeliz.png>
 Package pdftex.def Info: imagenes/tocarMaquinaSerFeliz.png  used on input line 
@@ -960,17 +970,17 @@ Package pdftex.def Info: imagenes/tocarMaquinaSerFeliz.png  used on input line
 (pdftex.def)             Requested size: 352.81552pt x 390.77565pt.
 
 [13 <./imagenes/tocarMaquinaSerFeliz.png>] (06-01-01-tocar.tex
-<imagenes/TocandoMuchos.png, id=398, 1439.3775pt x 773.13844pt>
+<imagenes/TocandoMuchos.png, id=399, 1439.3775pt x 773.13844pt>
 File: imagenes/TocandoMuchos.png Graphic file (type png)
 <use imagenes/TocandoMuchos.png>
 Package pdftex.def Info: imagenes/TocandoMuchos.png  used on input line 7.
 (pdftex.def)             Requested size: 352.81552pt x 189.50905pt.
-<imagenes/iconofogones.png, id=399, 323.70938pt x 79.04532pt>
+<imagenes/iconofogones.png, id=400, 323.70938pt x 79.04532pt>
 File: imagenes/iconofogones.png Graphic file (type png)
 <use imagenes/iconofogones.png>
 Package pdftex.def Info: imagenes/iconofogones.png  used on input line 24.
 (pdftex.def)             Requested size: 220.50887pt x 53.84537pt.
-<imagenes/configuracionvista.png, id=400, 497.60907pt x 580.41844pt>
+<imagenes/configuracionvista.png, id=401, 497.60907pt x 580.41844pt>
 File: imagenes/configuracionvista.png Graphic file (type png)
 <use imagenes/configuracionvista.png>
 Package pdftex.def Info: imagenes/configuracionvista.png  used on input line 39
@@ -978,7 +988,7 @@ Package pdftex.def Info: imagenes/configuracionvista.png  used on input line 39
 (pdftex.def)             Requested size: 264.61333pt x 308.65651pt.
  [14 <./imagenes/TocandoMuchos.png> <./imagenes/iconofogones.png>]) (06-01-02-s
 incronizar.tex
-<imagenes/captura-adminfogon.png, id=409, 484.05844pt x 288.3272pt>
+<imagenes/captura-adminfogon.png, id=410, 484.05844pt x 288.3272pt>
 File: imagenes/captura-adminfogon.png Graphic file (type png)
 <use imagenes/captura-adminfogon.png>
 Package pdftex.def Info: imagenes/captura-adminfogon.png  used on input line 11
@@ -986,39 +996,39 @@ Package pdftex.def Info: imagenes/captura-adminfogon.png  used on input line 11
 (pdftex.def)             Requested size: 308.71106pt x 183.89084pt.
 
 [15 <./imagenes/configuracionvista.png>]) (06-01-03-buscar-listar.tex
-<imagenes/filtrosBusqueda.png, id=416, 1237.62375pt x 663.98062pt>
+<imagenes/filtrosBusqueda.png, id=417, 1237.62375pt x 663.98062pt>
 File: imagenes/filtrosBusqueda.png Graphic file (type png)
 <use imagenes/filtrosBusqueda.png>
 Package pdftex.def Info: imagenes/filtrosBusqueda.png  used on input line 7.
 (pdftex.def)             Requested size: 352.81552pt x 189.2871pt.
  [16 <./imagenes/captura-adminfogon.png> <./imagenes/filtrosBusqueda.png>])
 (06-01-04-editar.tex
-<imagenes/nuevacancion.png, id=425, 346.29375pt x 550.30594pt>
+<imagenes/nuevacancion.png, id=426, 346.29375pt x 550.30594pt>
 File: imagenes/nuevacancion.png Graphic file (type png)
 <use imagenes/nuevacancion.png>
 Package pdftex.def Info: imagenes/nuevacancion.png  used on input line 10.
 (pdftex.def)             Requested size: 308.71106pt x 490.59366pt.
  [17]
-<imagenes/edicionletra.png, id=430, 819.06pt x 420.82219pt>
+<imagenes/edicionletra.png, id=431, 819.06pt x 420.82219pt>
 File: imagenes/edicionletra.png Graphic file (type png)
 <use imagenes/edicionletra.png>
 Package pdftex.def Info: imagenes/edicionletra.png  used on input line 21.
 (pdftex.def)             Requested size: 308.71106pt x 158.61058pt.
  [18 <./imagenes/nuevacancion.png>])
 (06-01-05-configurar.tex
-<imagenes/configuracion.png, id=438, 603.0028pt x 507.39563pt>
+<imagenes/configuracion.png, id=439, 603.0028pt x 507.39563pt>
 File: imagenes/configuracion.png Graphic file (type png)
 <use imagenes/configuracion.png>
 Package pdftex.def Info: imagenes/configuracion.png  used on input line 7.
 (pdftex.def)             Requested size: 308.71106pt x 259.75935pt.
-<imagenes/afinador.png, id=439, 629.35126pt x 490.83376pt>
+<imagenes/afinador.png, id=440, 629.35126pt x 490.83376pt>
 File: imagenes/afinador.png Graphic file (type png)
 <use imagenes/afinador.png>
 Package pdftex.def Info: imagenes/afinador.png  used on input line 22.
 (pdftex.def)             Requested size: 308.71106pt x 240.76527pt.
  [19 <./imagenes/edicionletra.png> <./imagenes/configuracion.png>]) (06-02-vist
 a-logica.tex
-<out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png, id=450, 939.51p
+<out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png, id=451, 939.51p
 t x 666.49pt>
 File: out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png Graphic fil
 e (type png)
@@ -1027,7 +1037,7 @@ Package pdftex.def Info: out/diaguml/diagrama-clase-cancion/diagrama-clase-canc
 ion.png  used on input line 19.
 (pdftex.def)             Requested size: 352.81552pt x 250.28908pt.
  [20 <./imagenes/afinador.png>]
-<out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png, id=457, 1
+<out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png, id=458, 1
 136.245pt x 451.6875pt>
 File: out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png Graph
 ic file (type png)
@@ -1035,7 +1045,7 @@ ic file (type png)
 Package pdftex.def Info: out/diaguml/diagrama-clase-aplicacion/diagrama-clase-a
 plicacion.png  used on input line 34.
 (pdftex.def)             Requested size: 352.81552pt x 140.256pt.
-<out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png, id=458,
+<out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png, id=459,
  863.225pt x 504.88625pt>
 File: out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png Gra
 phic file (type png)
@@ -1048,7 +1058,7 @@ reproductor.png  used on input line 47.
 copy)>])
 (06-03-vista-procesos.tex
 <out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarcancio
-nunica.png, id=465, 524.96124pt x 347.2975pt>
+nunica.png, id=466, 524.96124pt x 347.2975pt>
 File: out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarc
 ancionunica.png Graphic file (type png)
 <use out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarca
@@ -1059,7 +1069,7 @@ Package pdftex.def Info: out/diaguml/diagrama-secuencia-iniciarcancion/diagrama
  [22 <./out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png (
 PNG copy)>]
 <out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuencia-in
-iciarcanciondistribuido.png, id=471, 939.51pt x 468.75125pt>
+iciarcanciondistribuido.png, id=472, 939.51pt x 468.75125pt>
 File: out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuenc
 ia-iniciarcanciondistribuido.png Graphic file (type png)
 <use out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuenci
@@ -1068,7 +1078,7 @@ Package pdftex.def Info: out/diaguml/diagrama-secuencia-iniciarcanciondistribui
 do/diagrama-secuencia-iniciarcanciondistribuido.png  used on input line 31.
 (pdftex.def)             Requested size: 352.81552pt x 176.03162pt.
 <out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar.png,
- id=472, 575.14874pt x 808.01875pt>
+ id=473, 575.14874pt x 808.01875pt>
 File: out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar
 .png Graphic file (type png)
 <use out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar.
@@ -1080,7 +1090,7 @@ cuencia-sincronizar.png  used on input line 49.
 rcancionunica.png (PNG copy)> <./out/diaguml/diagrama-secuencia-iniciarcanciond
 istribuido/diagrama-secuencia-iniciarcanciondistribuido.png (PNG copy)>]) (06-0
 4-vista-fisica.tex
-<out/diaguml/diagrama-despliegue/diagrama-despliegue.png, id=479, 596.2275pt x 
+<out/diaguml/diagrama-despliegue/diagrama-despliegue.png, id=480, 596.2275pt x 
 973.6375pt>
 File: out/diaguml/diagrama-despliegue/diagrama-despliegue.png Graphic file (typ
 e png)
@@ -1091,7 +1101,7 @@ g  used on input line 18.
  [24 <./out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincroniz
 ar.png (PNG copy)>])
 (06-05-vista-desarrollo.tex
-<out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png, id=486, 1
+<out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png, id=487, 1
 526.70375pt x 1024.82875pt>
 File: out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png Graph
 ic file (type png)
@@ -1100,7 +1110,7 @@ Package pdftex.def Info: out/diaguml/diagrama-paquetes-cliente/diagrama-paquete
 s-cliente.png  used on input line 8.
 (pdftex.def)             Requested size: 352.81552pt x 236.83156pt.
  [25 <./out/diaguml/diagrama-despliegue/diagrama-despliegue.png (PNG copy)>]
-<out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png, id=492,
+<out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png, id=493,
  691.58376pt x 861.2175pt>
 File: out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png Gra
 phic file (type png)
@@ -1149,13 +1159,14 @@ Overfull \hbox (10.7943pt too wide) in paragraph at lines 175--189
 [][] 
  []
 
-) [32] (08-experimentacion-validacion.tex) [33] (09-conclusiones.tex) [34]
+) [32] (08-experimentacion-validacion.tex) [33] (09-conclusiones.tex [34])
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 []\OT1/ptm/m/n/10.95 ``Moises AI Stu-dio: Ly-ric Wri-ter,'' Moi-ses AI Stu-dio.
  [On-li-ne]. Avai-la-ble:
  []
 
-[35] (main.aux
+[36] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1163,28 +1174,52 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0F063E976B1F8C1FF4DC4FEC56E7A1BB;9481.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 0F063E976B1F8C1FF4DC4FEC56E7A1BB;9481
+(rerunfilecheck)             After:  2DC0B5678E05B03A6A39EDD6879D1F41;8807.
  ) 
 Here is how much of TeX's memory you used:
- 26437 strings out of 474486
- 489675 string characters out of 5743754
+ 26441 strings out of 474486
+ 489725 string characters out of 5743754
  2127542 words of memory out of 5000000
- 48106 multiletter control sequences out of 15000+600000
- 609912 words of font info for 139 fonts, out of 8000000 for 9000
+ 48108 multiletter control sequences out of 15000+600000
+ 610253 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,512b,1996s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts
-/type1/urw/symbol/usyr.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmb8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmr8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (36 pages, 1650987 bytes).
+
+pdfTeX warning (dest): name{subsubsection.6.1.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.6.1.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.6.1.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsubsection.6.1.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+ <C:\Users\luisw\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
+95.pk><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmex10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/f
+onts/type1/urw/symbol/usyr.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmb8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmr8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (37 pages, 1655120 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  625 words of extra memory for PDF output out of 10000 (max. 10000000)
 
