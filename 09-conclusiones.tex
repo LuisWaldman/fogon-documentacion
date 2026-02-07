@@ -31,11 +31,35 @@ que permitan el uso completo de la aplicacion.
 
 \subsection{Lecciones aprendidas}
 
-TDD desde el principio
+Durante el desarrollo del proyecto, el año 2025, el uso de la IA en programación 
+paso de ser recomendada a inevitable. A fines de septiembre, cuando empezaba a programar una funcion,
+ya aparecia sugerida, a veces mejor de lo que pensé, a veces antes de que lo piense.
 
-La IA es barbara, loco.
+Como todos, caí en la tentacion de hacer 'no-code' en algunas funcionalidad: traspasar tonalidad de canciones, 
+contar versos en poemas, pasar el audio a notas, etc. Pero cuando algún problema empezaba a ser complejo,
+una acción de la IA deshacia lo que habia hecho anteriormente. Lo mismo pasaba con los humanos 
+y ya teniamos una solución: guiar el desarrollo con pruebas.
 
+Durante la construccion del proyecto el modelo claude sonet 4.5, guiado por pruebas (que hasta a veces escribia con el mismo),
+intervino en el desarrollo de la mayoria de las funcionalidades y en la corrección de bugs.
 
-\subsection{Conclusiones}
+Sobre el final del proyecto, cuando este tenia distintas vistas y estados, se hizo necesario un modo de probar la aplicación en
+ su conjunto. Sobre el final del desarrolló, armé test punta a punta con Playwright; pero si tendria que rehacer el 
+ proyecto en 2026, lo haria desde el principio con pruebas de integración, o sea: desarrollo guiado por comportamiento.
 
-El proyecto fue ambicioso, y se logró desarrollar un sistema funcional que cumple con los objetivos planteados.
+ - Sumarle a todo la aprendido el TDD
+- minimo de un proyecto, la IA
+
+ \subsection{Conclusiones}
+
+El proyecto fue ambicioso, no solo queria que el proyecto sea novedoso, sino que el conjunto de tecnologias utilizadas sea el ideal.
+En ese sentido, el framework vitejs, con el codigo regulado por 'Lint' y pruebas unitarias en una integracion continua que termina 
+desplegandose en el fogon.ar; terminó resultando ser una buena eleccion. Sobre el servidor, 
+Golang hizo facil crear APIs y procesos multihilos para atender a los clientes; y tanto en  Render.com como Fly.io, 
+pudimos hacer despliegues automaticos.
+
+Los desafios principales (el pentagrama en VexFlow, el estado compartido del Fogon, las miltiples vistas sincronizadas y editadas) 
+fueron superados, y tambien se recorrieron otros caminos que terminan mejorando la aplicación.
+
+Asi que soy el mas poronga ingeniero, denme el titulo hijos de puta!
+
