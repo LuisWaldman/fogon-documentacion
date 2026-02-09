@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  9 FEB 2026 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.29)  9 FEB 2026 13:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,6 +788,10 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
+
+
+LaTeX Warning: Label `lst:prueba-unitaria-separador-silabas' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -882,7 +886,7 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count330
-<imagenes/logoFiuba.png, id=235, 184.2885pt x 74.679pt>
+<imagenes/logoFiuba.png, id=262, 184.2885pt x 74.679pt>
 File: imagenes/logoFiuba.png Graphic file (type png)
 <use imagenes/logoFiuba.png>
 Package pdftex.def Info: imagenes/logoFiuba.png  used on input line 74.
@@ -891,55 +895,59 @@ Package pdftex.def Info: imagenes/logoFiuba.png  used on input line 74.
 
 {C:/Users/luisw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/luis
 w/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./imagenes/logoFi
-uba.png>] (main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.102 \newpage
-               [1] (01-palabras-clave.tex) [2] (02-abstracto.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 5.
-
-[3]) [4] (03-agradecimientos.tex) [5] (04-introduccion.tex
-
-LaTeX Warning: Citation `tanenbaum2017' on page 6 undefined on input line 4.
-
-[6]) [7] (05-estado-del-arte.tex [8]
+uba.png>] (main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 68.
-
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+ 4.
+ (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 68.
+ 4.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 68.
+ 4.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 68.
+ 4.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 ...ditar partituras}{33}{subsubsection.4.2.5}
+                                                  % [1])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [2]
+(01-palabras-clave.tex) [3] (02-abstracto.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 5.
+
+[4]) [5] (03-agradecimientos.tex) [6] (04-introduccion.tex [7]) [8]
+(05-estado-del-arte.tex [9]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
@@ -947,86 +955,74 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
- [9] [10]) [11]
-(06-solucion-implementada.tex
-
-LaTeX Warning: Citation `kruchten1995' on page 12 undefined on input line 5.
-
-
-LaTeX Warning: Citation `reqnroll2024' on page 12 undefined on input line 9.
-
-<imagenes/tocarMaquinaSerFeliz.png, id=293, 341.47575pt x 378.213pt>
+ [10] [11]) [12] (06-solucion-implementada.tex
+<imagenes/tocarMaquinaSerFeliz.png, id=394, 341.47575pt x 378.213pt>
 File: imagenes/tocarMaquinaSerFeliz.png Graphic file (type png)
 <use imagenes/tocarMaquinaSerFeliz.png>
 Package pdftex.def Info: imagenes/tocarMaquinaSerFeliz.png  used on input line 
 20.
 (pdftex.def)             Requested size: 352.81552pt x 390.77565pt.
-[12 <./imagenes/tocarMaquinaSerFeliz.png>] (06-01-01-tocar.tex
-<imagenes/TocandoMuchos.png, id=301, 1439.3775pt x 773.13844pt>
+
+[13 <./imagenes/tocarMaquinaSerFeliz.png>] (06-01-01-tocar.tex
+<imagenes/TocandoMuchos.png, id=403, 1439.3775pt x 773.13844pt>
 File: imagenes/TocandoMuchos.png Graphic file (type png)
 <use imagenes/TocandoMuchos.png>
 Package pdftex.def Info: imagenes/TocandoMuchos.png  used on input line 7.
 (pdftex.def)             Requested size: 352.81552pt x 189.50905pt.
-<imagenes/iconofogones.png, id=302, 323.70938pt x 79.04532pt>
+<imagenes/iconofogones.png, id=404, 323.70938pt x 79.04532pt>
 File: imagenes/iconofogones.png Graphic file (type png)
 <use imagenes/iconofogones.png>
 Package pdftex.def Info: imagenes/iconofogones.png  used on input line 24.
 (pdftex.def)             Requested size: 220.50887pt x 53.84537pt.
-<imagenes/configuracionvista.png, id=303, 497.60907pt x 580.41844pt>
+<imagenes/configuracionvista.png, id=405, 497.60907pt x 580.41844pt>
 File: imagenes/configuracionvista.png Graphic file (type png)
 <use imagenes/configuracionvista.png>
 Package pdftex.def Info: imagenes/configuracionvista.png  used on input line 39
 .
 (pdftex.def)             Requested size: 264.61333pt x 308.65651pt.
- [13 <./imagenes/TocandoMuchos.png> <./imagenes/iconofogones.png>]) (06-01-02-s
+ [14 <./imagenes/TocandoMuchos.png> <./imagenes/iconofogones.png>]) (06-01-02-s
 incronizar.tex
-<imagenes/captura-adminfogon.png, id=312, 484.05844pt x 288.3272pt>
+<imagenes/captura-adminfogon.png, id=414, 484.05844pt x 288.3272pt>
 File: imagenes/captura-adminfogon.png Graphic file (type png)
 <use imagenes/captura-adminfogon.png>
 Package pdftex.def Info: imagenes/captura-adminfogon.png  used on input line 11
 .
 (pdftex.def)             Requested size: 308.71106pt x 183.89084pt.
 
-[14 <./imagenes/configuracionvista.png>]) (06-01-03-buscar-listar.tex
-<imagenes/filtrosBusqueda.png, id=319, 1237.62375pt x 663.98062pt>
+[15 <./imagenes/configuracionvista.png>]) (06-01-03-buscar-listar.tex
+<imagenes/filtrosBusqueda.png, id=421, 1237.62375pt x 663.98062pt>
 File: imagenes/filtrosBusqueda.png Graphic file (type png)
 <use imagenes/filtrosBusqueda.png>
 Package pdftex.def Info: imagenes/filtrosBusqueda.png  used on input line 7.
 (pdftex.def)             Requested size: 352.81552pt x 189.2871pt.
- [15 <./imagenes/captura-adminfogon.png> <./imagenes/filtrosBusqueda.png>])
+ [16 <./imagenes/captura-adminfogon.png> <./imagenes/filtrosBusqueda.png>])
 (06-01-04-editar.tex
-<imagenes/nuevacancion.png, id=328, 346.29375pt x 550.30594pt>
+<imagenes/nuevacancion.png, id=430, 346.29375pt x 550.30594pt>
 File: imagenes/nuevacancion.png Graphic file (type png)
 <use imagenes/nuevacancion.png>
 Package pdftex.def Info: imagenes/nuevacancion.png  used on input line 10.
 (pdftex.def)             Requested size: 308.71106pt x 490.59366pt.
- [16]
-<imagenes/edicionletra.png, id=333, 819.06pt x 420.82219pt>
+ [17]
+<imagenes/edicionletra.png, id=435, 819.06pt x 420.82219pt>
 File: imagenes/edicionletra.png Graphic file (type png)
 <use imagenes/edicionletra.png>
 Package pdftex.def Info: imagenes/edicionletra.png  used on input line 21.
 (pdftex.def)             Requested size: 308.71106pt x 158.61058pt.
- [17 <./imagenes/nuevacancion.png>])
+ [18 <./imagenes/nuevacancion.png>])
 (06-01-05-configurar.tex
-<imagenes/configuracion.png, id=340, 603.0028pt x 507.39563pt>
+<imagenes/configuracion.png, id=443, 603.0028pt x 507.39563pt>
 File: imagenes/configuracion.png Graphic file (type png)
 <use imagenes/configuracion.png>
 Package pdftex.def Info: imagenes/configuracion.png  used on input line 7.
 (pdftex.def)             Requested size: 308.71106pt x 259.75935pt.
-<imagenes/afinador.png, id=341, 629.35126pt x 490.83376pt>
+<imagenes/afinador.png, id=444, 629.35126pt x 490.83376pt>
 File: imagenes/afinador.png Graphic file (type png)
 <use imagenes/afinador.png>
 Package pdftex.def Info: imagenes/afinador.png  used on input line 22.
 (pdftex.def)             Requested size: 308.71106pt x 240.76527pt.
- [18 <./imagenes/edicionletra.png> <./imagenes/configuracion.png>])
-
-LaTeX Warning: Citation `kruchten1995' on page 19 undefined on input line 45.
-
-
-LaTeX Warning: Citation `reqnroll2024' on page 19 undefined on input line 51.
-
-(06-02-vista-logica.tex
-<out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png, id=351, 939.51p
+ [19 <./imagenes/edicionletra.png> <./imagenes/configuracion.png>]) (06-02-vist
+a-logica.tex
+<out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png, id=455, 939.51p
 t x 666.49pt>
 File: out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png Graphic fil
 e (type png)
@@ -1034,8 +1030,8 @@ e (type png)
 Package pdftex.def Info: out/diaguml/diagrama-clase-cancion/diagrama-clase-canc
 ion.png  used on input line 19.
 (pdftex.def)             Requested size: 352.81552pt x 250.28908pt.
- [19 <./imagenes/afinador.png>]
-<out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png, id=358, 1
+ [20 <./imagenes/afinador.png>]
+<out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png, id=462, 1
 136.245pt x 451.6875pt>
 File: out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png Graph
 ic file (type png)
@@ -1043,7 +1039,7 @@ ic file (type png)
 Package pdftex.def Info: out/diaguml/diagrama-clase-aplicacion/diagrama-clase-a
 plicacion.png  used on input line 34.
 (pdftex.def)             Requested size: 352.81552pt x 140.256pt.
-<out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png, id=359,
+<out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png, id=463,
  863.225pt x 504.88625pt>
 File: out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png Gra
 phic file (type png)
@@ -1051,12 +1047,12 @@ phic file (type png)
 Package pdftex.def Info: out/diaguml/diagrama-clase-reproductor/diagrama-clase-
 reproductor.png  used on input line 47.
 (pdftex.def)             Requested size: 352.81552pt x 206.34985pt.
- [20 <./out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png (PNG copy
+ [21 <./out/diaguml/diagrama-clase-cancion/diagrama-clase-cancion.png (PNG copy
 )> <./out/diaguml/diagrama-clase-aplicacion/diagrama-clase-aplicacion.png (PNG 
 copy)>])
 (06-03-vista-procesos.tex
 <out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarcancio
-nunica.png, id=366, 524.96124pt x 347.2975pt>
+nunica.png, id=470, 524.96124pt x 347.2975pt>
 File: out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarc
 ancionunica.png Graphic file (type png)
 <use out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-iniciarca
@@ -1064,10 +1060,10 @@ ncionunica.png>
 Package pdftex.def Info: out/diaguml/diagrama-secuencia-iniciarcancion/diagrama
 -secuencia-iniciarcancionunica.png  used on input line 18.
 (pdftex.def)             Requested size: 352.81552pt x 233.41942pt.
- [21 <./out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png (
+ [22 <./out/diaguml/diagrama-clase-reproductor/diagrama-clase-reproductor.png (
 PNG copy)>]
 <out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuencia-in
-iciarcanciondistribuido.png, id=372, 939.51pt x 468.75125pt>
+iciarcanciondistribuido.png, id=476, 939.51pt x 468.75125pt>
 File: out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuenc
 ia-iniciarcanciondistribuido.png Graphic file (type png)
 <use out/diaguml/diagrama-secuencia-iniciarcanciondistribuido/diagrama-secuenci
@@ -1076,7 +1072,7 @@ Package pdftex.def Info: out/diaguml/diagrama-secuencia-iniciarcanciondistribui
 do/diagrama-secuencia-iniciarcanciondistribuido.png  used on input line 31.
 (pdftex.def)             Requested size: 352.81552pt x 176.03162pt.
 <out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar.png,
- id=373, 575.14874pt x 808.01875pt>
+ id=477, 575.14874pt x 808.01875pt>
 File: out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar
 .png Graphic file (type png)
 <use out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincronizar.
@@ -1084,11 +1080,11 @@ png>
 Package pdftex.def Info: out/diaguml/diagrama-secuencia-sincronizar/diagrama-se
 cuencia-sincronizar.png  used on input line 49.
 (pdftex.def)             Requested size: 352.81552pt x 495.67715pt.
- [22 <./out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-inicia
+ [23 <./out/diaguml/diagrama-secuencia-iniciarcancion/diagrama-secuencia-inicia
 rcancionunica.png (PNG copy)> <./out/diaguml/diagrama-secuencia-iniciarcanciond
 istribuido/diagrama-secuencia-iniciarcanciondistribuido.png (PNG copy)>]) (06-0
 4-vista-fisica.tex
-<out/diaguml/diagrama-despliegue/diagrama-despliegue.png, id=380, 596.2275pt x 
+<out/diaguml/diagrama-despliegue/diagrama-despliegue.png, id=484, 596.2275pt x 
 973.6375pt>
 File: out/diaguml/diagrama-despliegue/diagrama-despliegue.png Graphic file (typ
 e png)
@@ -1096,10 +1092,10 @@ e png)
 Package pdftex.def Info: out/diaguml/diagrama-despliegue/diagrama-despliegue.pn
 g  used on input line 18.
 (pdftex.def)             Requested size: 352.81552pt x 576.14964pt.
- [23 <./out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincroniz
+ [24 <./out/diaguml/diagrama-secuencia-sincronizar/diagrama-secuencia-sincroniz
 ar.png (PNG copy)>])
 (06-05-vista-desarrollo.tex
-<out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png, id=386, 1
+<out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png, id=491, 1
 526.70375pt x 1024.82875pt>
 File: out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png Graph
 ic file (type png)
@@ -1107,8 +1103,8 @@ ic file (type png)
 Package pdftex.def Info: out/diaguml/diagrama-paquetes-cliente/diagrama-paquete
 s-cliente.png  used on input line 8.
 (pdftex.def)             Requested size: 352.81552pt x 236.83156pt.
- [24 <./out/diaguml/diagrama-despliegue/diagrama-despliegue.png (PNG copy)>]
-<out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png, id=393,
+ [25 <./out/diaguml/diagrama-despliegue/diagrama-despliegue.png (PNG copy)>]
+<out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png, id=497,
  691.58376pt x 861.2175pt>
 File: out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png Gra
 phic file (type png)
@@ -1116,42 +1112,43 @@ phic file (type png)
 Package pdftex.def Info: out/diaguml/diagrama-paquetes-servidor/diagrama-paquet
 es-servidor.png  used on input line 23.
 (pdftex.def)             Requested size: 352.81552pt x 439.35966pt.
- [25 <./out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png (PN
+ [26 <./out/diaguml/diagrama-paquetes-cliente/diagrama-paquetes-cliente.png (PN
 G copy)>]) (06-06-vista-escenarios.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 17.
- [26 <./out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png (
+ [27 <./out/diaguml/diagrama-paquetes-servidor/diagrama-paquetes-servidor.png (
 PNG copy)>])
-[27] [28]) [29] (07-metodologia-aplicada.tex [30] [31] [32] [33]) [34]
+[28] [29]) [30] (07-metodologia-aplicada.tex [31] [32] [33] [34]) [35]
 (08-experimentacion-validacion.tex
-<imagenes/relojDesarrollo.png, id=467, 323.70938pt x 521.69907pt>
+<imagenes/relojDesarrollo.png, id=571, 323.70938pt x 521.69907pt>
 File: imagenes/relojDesarrollo.png Graphic file (type png)
 <use imagenes/relojDesarrollo.png>
 Package pdftex.def Info: imagenes/relojDesarrollo.png  used on input line 23.
 (pdftex.def)             Requested size: 352.81552pt x 568.6407pt.
- [35]
-<imagenes/relojOnRender.png, id=472, 323.70938pt x 518.6878pt>
+ [36]
+<imagenes/relojOnRender.png, id=577, 323.70938pt x 518.6878pt>
 File: imagenes/relojOnRender.png Graphic file (type png)
 <use imagenes/relojOnRender.png>
 Package pdftex.def Info: imagenes/relojOnRender.png  used on input line 36.
 (pdftex.def)             Requested size: 352.81552pt x 565.3585pt.
- [36 <./imagenes/relojDesarrollo.png>]
-<imagenes/relojOnFly.png, id=480, 323.70938pt x 523.20468pt>
+ [37 <./imagenes/relojDesarrollo.png>]
+<imagenes/relojOnFly.png, id=584, 323.70938pt x 523.20468pt>
 File: imagenes/relojOnFly.png Graphic file (type png)
 <use imagenes/relojOnFly.png>
 Package pdftex.def Info: imagenes/relojOnFly.png  used on input line 46.
 (pdftex.def)             Requested size: 352.81552pt x 570.2818pt.
 
-[37 <./imagenes/relojOnRender.png>]
-<imagenes/relojRTC.png, id=487, 323.70938pt x 545.03625pt>
+[38 <./imagenes/relojOnRender.png>]
+<imagenes/relojRTC.png, id=591, 323.70938pt x 545.03625pt>
 File: imagenes/relojRTC.png Graphic file (type png)
 <use imagenes/relojRTC.png>
 Package pdftex.def Info: imagenes/relojRTC.png  used on input line 57.
 (pdftex.def)             Requested size: 352.81552pt x 594.07774pt.
- [38 <./imagenes/relojOnFly.png>] [39 <./imagenes/relojRTC.png>]
+ [39 <./imagenes/relojOnFly.png>] [40 <./imagenes/relojRTC.png>]
 (C:\Users\luisw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) [40] (09-conclusiones.tex [41]) [42] [43] (main.aux
+)
+[41]) [42] (09-conclusiones.tex [43]) [44] [45] (main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1161,26 +1158,17 @@ L3 programming layer <2024-01-04>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D09D2B3F575D329B8DC081DA6AFA80CA;8639
-(rerunfilecheck)             After:  89C715288DF5660578A58F67EF442CCF;9582.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 89C715288DF5660578A58F67EF442CCF;9582.
  ) 
 Here is how much of TeX's memory you used:
- 26599 strings out of 474486
- 492193 string characters out of 5743754
+ 26671 strings out of 474486
+ 493168 string characters out of 5743754
  2129542 words of memory out of 5000000
- 48232 multiletter control sequences out of 15000+600000
- 601491 words of font info for 121 fonts, out of 8000000 for 9000
+ 48281 multiletter control sequences out of 15000+600000
+ 609912 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,549b,1996s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -1191,9 +1179,9 @@ blic/amsfonts/cm/cmtt10.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts
 type1/urw/times/utmb8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmr8a.pfb><C:/Users/luisw/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (44 pages, 1894733 bytes).
+Output written on main.pdf (46 pages, 1918306 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 597 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 200 named destinations out of 1000 (max. 500000)
+ 653 words of extra memory for PDF output out of 10000 (max. 10000000)
 
