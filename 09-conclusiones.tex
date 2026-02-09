@@ -5,7 +5,7 @@ Resumen final del trabajo, destacando los objetivos alcanzados y el valor del si
 
 \subsection{Desarrollos Futuros}
 
-El sistema está pensado para la escalabilidad, en modo "desarrollador", 
+El sistema está pensado para la escalabilidad, en modo ``desarrollador'', 
 en las opciones de configuración se puede definir el servidor al que se conecta.
 Si el fogón tiene éxito mundial, nos bastaría con agregar más servidores 
 distribuidos por región e implementar un paso previo en el que el cliente
@@ -17,7 +17,7 @@ el teclado con las notas bajando y alguna vista para bateristas.
 
 Otra funcionalidad que quedó pendiente, es la de que la aplicación no avance 
 el tiempo según transcurre, sino según escucha lo que escucha que el músico está tocando.
-Así, podría ayudar "esperando" a un aprendiz.
+Así, podría ayudar ``esperando'' a un aprendiz.
 
 Nos queda agregar algún modo de editar ritmo como acompañamiento, que sumado 
 a los pentagramas de VexFlow, permitiría editar canciones completas.
@@ -35,7 +35,7 @@ Durante el desarrollo del proyecto, el año 2025, el uso de la IA en programaci�
 pasó de ser recomendada a inevitable. A fines de septiembre, cuando empezaba a programar una función,
 ya aparecía sugerida, a veces mejor de lo que pensé, a veces antes de que lo piense.
 
-Como todos, caí en la tentación de hacer 'no-code' en algunas funcionalidades: traspasar tonalidad de canciones, 
+Como todos, caí en la tentación de hacer ``no-code'' en algunas funcionalidades: traspasar tonalidad de canciones, 
 contar versos en poemas, pasar el audio a notas, etc. Pero cuando algún problema empezaba a ser complejo,
 una acción de la IA deshacía lo que había hecho anteriormente. Lo mismo pasaba con los humanos 
 y ya teníamos una solución: guiar el desarrollo con pruebas.
@@ -64,18 +64,18 @@ El proyecto fue ambicioso, no solo quería que el proyecto sea novedoso,
 sino que el conjunto de tecnologías utilizadas sea el ideal y que 
 reflejara lo que aprendí en la facultad.
 
-Con respecto a las herramientas, el framework vitejs, con el código regulado por 'Lint' y pruebas unitarias en una integración continua que termina 
+Con respecto a las herramientas, el framework vitejs, con el código regulado por ``Lint'' y pruebas unitarias en una integración continua que termina 
 desplegándose en el fogon.ar; terminó resultando ser una excelente elección. Sobre el servidor, 
 Golang hizo fácil crear APIs y procesos multihilos para atender a los clientes; y tanto en  Render.com como Fly.io, 
 pudimos hacer despliegues automáticos.
 
-Sobre lo aprendido en la facultad, En Técnicas de Diseño, dejamos de " solo programar " para empezar a pensar los sistemas por su arquitectura 
+Sobre lo aprendido en la facultad, En Técnicas de Diseño, dejamos de ``solo programar'' para empezar a pensar los sistemas por su arquitectura 
 y a ordenar los problemas por los patrones que lo resuelven. Luego, en Introducción a Sistemas Distribuidos 
 y en Sistemas Distribuidos entendimos qué es un protocolo, cómo calibrar relojes, qué es y cómo se elige un proceso líder. 
 
 Esto lo utilicé para pensar los desafíos principales en la aplicación. Para el pentagrama en VexFlow, por ejemplo,
 decidimos usar el patrón Facade en vez de Proxy, y al revés para administrar el video; las múltiples vistas son reutilizables y extensibles
- porque están separadas del modelo y del controlador; El estado compartido del Fogón, es pensado como "estado compartido" porque toda la aplicación está pensada en los términos 
+ porque están separadas del modelo y del controlador; El estado compartido del Fogón, es pensado como ``estado compartido'' porque toda la aplicación está pensada en los términos 
 aprendidos en Sistemas Distribuidos.
 
 Además, desarrollé otras herramientas para medir y validar la exactitud de la calibración, 

@@ -18,9 +18,9 @@ Detallamos a continuación las tareas que integran a cada hito.
 Finaliza con el sitio desplegado en \url{http://www.fogon.ar/} con
 integración continua. Permite tocar algunas canciones.
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 SetUp inicial: armar el repositorio, crear la aplicación Vue.js + TypeScript, los módulos de prueba y el despliegue automático & 12 \\
 Definir JSON para canciones y armar ejemplos & 4 \\
@@ -39,9 +39,9 @@ Armar pantalla tocar letra y acordes & 12 \\
 Varios usuarios pueden unirse a una sesión y reproducir juntos una lista de
 canciones.
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 Definir protocolo & 8 \\
 Login de usuarios con Google (extendible) & 8 \\
@@ -62,9 +62,9 @@ Permite que la sesión siga viva cuando se desconecta el Admin, asignando el rol
 Agrega la administración de usuarios, que pueden editar y compartir las
 canciones.
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 Pantalla de configuración & 6 \\
 Administración de usuarios & 6 \\
@@ -86,9 +86,9 @@ Permite cambiar la escala (cambia todos los acordes de la canción) & 8 \\
 El usuario puede buscar canciones en distintos repositorios y armar y
 compartir listas de reproducción.
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 Armar índices & 6 \\
 Armar filtros & 6 \\
@@ -107,9 +107,9 @@ Desde ``Tocar'' reproducir la lista de canciones actual & 6 \\
 Muestra las partituras con VexFlow, permite editarlas y cargarlas desde
 archivos XMLMusic.
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 Agregar a JSON de la canción la posibilidad de guardar partituras para distintos instrumentos & 6 \\
 Permitir desde la aplicación web definir un instrumento default para que te muestre la partitura & 3 \\
@@ -124,9 +124,9 @@ Generar ejemplos de partituras & 2 \\
 
 \subsubsection{Más instrumentos y detalles}
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 Reparar bugs de versiones anteriores & 10 \\
 Vista de acordes con dibujos de cómo sería en la guitarra & 15 \\
@@ -140,11 +140,13 @@ Reproducir las partituras en formato MIDI & 20 \\
 
 \subsection{Herramientas Utilizadas}
 
-* El Visual Code como entorno de desarrollo integrado (IDE) principal para escribir y depurar el código.
-* Vite como herramienta de construcción y empaquetado del proyecto.
-* Git y GitHub para el control de versiones y la colaboración en el desarrollo del proyecto.
-* El modelo Claude Sonnet 4.5 para desarrollo de pruebas, de codigo y de vistas.
-* Jira para la gestión de proyectos y seguimiento de tareas.
+\begin{itemize}
+\item El Visual Code como entorno de desarrollo integrado (IDE) principal para escribir y depurar el código.
+\item Vite como herramienta de construcción y empaquetado del proyecto.
+\item Git y GitHub para el control de versiones y la colaboración en el desarrollo del proyecto.
+\item El modelo Claude Sonnet 4.5 para desarrollo de pruebas, de código y de vistas.
+\item Jira para la gestión de proyectos y seguimiento de tareas.
+\end{itemize}
 
 \subsection{Desarrollo de la aplicación}
 
@@ -172,9 +174,9 @@ nuevos features, que desarrollamos como una nueva entrega:
 
 
 
-\begin{tabular}{|p{0.75\textwidth}|r|}
+\begin{tabular}{|p{0.65\textwidth}|r|}
 \hline
-\colorbox{gray!15}{\parbox{0.72\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
+\colorbox{gray!15}{\parbox{0.62\textwidth}{\textbf{Tareas}}} & \colorbox{gray!15}{\parbox{3.2cm}{\centering\textbf{Duración (horas)}}} \\
 \hline
 Sincronizar relojes por WebRTC & 20 \\
 Mostrar Acordes de notas en cifrado español & 10 \\

@@ -1,35 +1,131 @@
 \section{Experimentación y Validación}
 \label{sec:experimentacion-validacion}
 
-Presentar los experimentos realizados y la validación de la solución implementada.
+Para la validacion y el debug de la aplicación, se crearon distintas herrmientas; 
+la mayoria de ellas se acceden desde el perfil, accediendo al "modo desarrollador". 
+Desde ahi se puede modificar el servidor al que se conecta y 
+ver los detalles de la sinconización y las sesiones. 
 
-\subsection{Diseño de Experimentos}
-Describir el diseño de los experimentos realizados para validar la solución.
+Veremos en el proximo capítulo como los utilizamos para validar la sincronizacion y 
+tomar algunas deciciones de diseño.
 
-\subsection{Casos de Prueba}
-Detallar los casos de prueba ejecutados.
+Luego, repasaremos las pruebas unitarias y de aceptación que se desarrolloron durante la aplicación 
+y despues de la aplicación.
 
-\subsection{Resultados Obtenidos}
-Presentar los resultados obtenidos del trabajo realizado.
 
-% Ejemplo de tabla
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{Caso de Prueba} & \textbf{Resultado Esperado} & \textbf{Resultado Obtenido} \\
-        \hline
-        Prueba 1 & Éxito & Éxito \\
-        \hline
-        Prueba 2 & Éxito & Éxito \\
-        \hline
-    \end{tabular}
-    \caption{Resultados de las pruebas realizadas}
-    \label{tab:resultados}
-\end{table}
+\subsection{Calibración}
 
-\subsection{Análisis de Resultados}
-Analizar e interpretar los resultados obtenidos.
+Vemos los datos de calibración del reloj en desarrollo:
 
-\subsection{Validación con Usuarios}
-Describir el proceso de validación con usuarios finales.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imagenes/relojDesarrollo.png}
+\caption{Calibración del reloj en desarrollo}
+\end{figure}
+
+Muestra la hora local y la del servidor. En el segundo cuadro la diferencia entre ambos y el
+delta de error. Presionando en la lupa, muestra el detalle de la medicion. En este caso, 
+10 pedidos con su round trip time y la diferencia entre el reloj local y el del servidor. 
+De ellos, obtiene los 6 mejores y calcula el promedio.
+En mi maquina, claro, anda perfecto. Menos de 4 milisegundos de margen de error, 
+en cambio, estos son los datos con la aplicacion desplegada en github y onrender.com:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imagenes/relojOnRender.png}
+\caption{Calibración del reloj con el servidor en render.com}
+\end{figure}
+
+114.14s de margen de error es mucho mas que lo esperable, teniendo en cuenta que 
+el humano empieza a notar el delay a partir de los 20ms. Buscamos, entonces, un servidor especializado en la velocidad: fly.io:
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imagenes/relojOnFly.png}
+\caption{Calibración del reloj con el servidor en fly.io}
+\end{figure}
+
+
+Vemos que con este servidor alcanzamos un tolerable margen de 22 milisegundos. Hubo que desarrollar 
+una herramienta para calibrar dispositivos en una misma red local, una vez que inician un fogon. 
+Cuando esto ocurre, se conectan con WebRTC, alcanzando estos resultados:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{imagenes/relojRTC.png}
+\caption{Calibración del reloj RTC}
+\end{figure}
+
+Como vemos, conectados por WebRTC, volvemos a calibrarnos con otro dispositivo con margenes menores al milisegundo.
+
+De este modo, logramos evitar la dependencia con un proovedor de hosting por su latencia.
+
+\subsection{Pruebas Unitarias}
+
+Las clases del negocio fueron testeadas con vitest, 
+muchas reglas y algoritmos propios de la musica y de la poesia, fueron 
+resueltos guiando el desarrrollo con pruebas unitarias.
+
+Lo usamos para calcular los acordes de una escala:
+
+\begin{lstlisting}[language={[Sharp]C}, caption=Prueba unitaria de la clase MusicaHelper, label=lst:prueba-unitaria-musica-helper]
+import { MusicaHelper } from './MusicaHelper'
+import { describe, it, expect } from 'vitest'
+
+describe('MusicaHelper', () => {
+  it('Notas de la escala', () => {
+    const helper = new MusicaHelper()
+
+    [...]
+
+
+    expect(helper.GetAcordesdeescala('Am')).toEqual([
+      'Am',
+      'Bdim',
+      'C',
+      'Dm',
+      'Em',
+      'F',
+      'G',
+    ])
+    [...]
+  })
+})
+
+\end{lstlisting}
+
+Para contar las silabas de un verso:
+
+\begin{lstlisting}[language={[Sharp]C}, caption=Prueba unitaria de la clase SeparadorSilabasRima, label=lst:prueba-unitaria-separador-silabas]
+  it('Pruebo contar silabas de versos famosos', () => {
+    expect(
+      sepSilabas.GetNroSilabasVerso(
+        sepSilabas.getSilabasPalabra('Sonye que el rrio me hablaba'),
+      ),
+    ).toEqual(7)
+  })
+
+\end{lstlisting}
+
+Para calcular los acordes del ukelele:
+
+\begin{lstlisting}[language={[Sharp]C}, caption=Prueba unitaria de la clase SeparadorSilabasRima, label=lst:prueba-unitaria-separador-silabas]
+
+    it('debe devolver el acorde E correctamente', () => {
+      const acorde = AcordesUkeleleHelper.getAcorde('E')
+      expect(acorde.acorde).toBe('E')
+      expect(acorde.cejilla).toBe(0)
+      expect(acorde.cuerda[0]).toBe('2')
+      expect(acorde.cuerda[1]).toBe('4')
+      expect(acorde.cuerda[2]).toBe('4')
+      expect(acorde.cuerda[3]).toBe('4')
+    })
+\end{lstlisting}
+
+\subsection{Pruebas Aceptación}
+
+Las pruebas de aceptación se desarrollaron con NUnit y Playwright. 
+Como mencionamos en las conclusiones, estas pruebas no fueron parte del proyecto.
+Elaboré algunas para esta presentación, y debería hacer mas segun el proyecto crezca.
